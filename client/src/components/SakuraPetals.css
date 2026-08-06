@@ -1,0 +1,44 @@
+.sakura-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.sakura-petal {
+  position: absolute;
+  top: 0;
+  background: linear-gradient(135deg, #FFB7C5 0%, #FF99B0 100%);
+  border-radius: 100% 0 100% 0; /* Creates a teardrop/leaf shape */
+  filter: blur(0.5px);
+  will-change: transform;
+  animation-name: fall-and-sway;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fall-and-sway {
+  0% {
+    transform: translate(0, -10vh) rotate(0deg) scale(1);
+  }
+  25% {
+    transform: translate(20px, 20vh) rotate(90deg) scale(1.05);
+  }
+  50% {
+    transform: translate(-20px, 50vh) rotate(180deg) scale(0.95);
+  }
+  75% {
+    transform: translate(20px, 80vh) rotate(270deg) scale(1.05);
+  }
+  100% {
+    transform: translate(0, 110vh) rotate(360deg) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sakura-petal {
+    animation: none;
+    display: none; /* Hide for users who prefer reduced motion */
+  }
+}

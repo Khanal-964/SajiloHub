@@ -1,0 +1,668 @@
+/* ============================================
+   SajiloHub — Component Styles
+   Auth pages, dashboard, animations
+   ============================================ */
+
+/* ================================================
+   ANIMATIONS
+   ================================================ */
+
+/* Sakura petals falling */
+@keyframes petalFall {
+  0% {
+    transform: translateY(-10vh) translateX(0) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  20% {
+    transform: translateY(18vh) translateX(15px) rotate(72deg) scale(0.95);
+  }
+  40% {
+    transform: translateY(38vh) translateX(-12px) rotate(144deg) scale(1.05);
+  }
+  60% {
+    transform: translateY(58vh) translateX(20px) rotate(216deg) scale(0.9);
+  }
+  80% {
+    transform: translateY(78vh) translateX(-8px) rotate(288deg) scale(1);
+  }
+  100% {
+    transform: translateY(110vh) translateX(10px) rotate(360deg) scale(0.95);
+    opacity: 0;
+  }
+}
+
+/* Spinner rotation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Fade-in entrance */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Subtle pulse for branding */
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 4px 12px rgba(196, 30, 58, 0.3);
+  }
+  50% {
+    box-shadow: 0 4px 20px rgba(196, 30, 58, 0.5);
+  }
+}
+
+/* ================================================
+   AUTH PAGE LAYOUT
+   ================================================ */
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(160deg, #FFF8F0 0%, #FFE8EE 40%, #FFF0F3 70%, #FFF8F0 100%);
+}
+
+/* Decorative wave pattern at bottom */
+.auth-page::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 140px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120'%3E%3Cpath fill='%23FFD9E1' fill-opacity='0.3' d='M0,40 C360,100 720,0 1080,60 C1260,90 1380,60 1440,40 L1440,120 L0,120 Z'/%3E%3C/svg%3E") no-repeat bottom;
+  background-size: cover;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Second wave layer for depth */
+.auth-page::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 80'%3E%3Cpath fill='%23FFB7C5' fill-opacity='0.15' d='M0,20 C480,80 960,0 1440,40 L1440,80 L0,80 Z'/%3E%3C/svg%3E") no-repeat bottom;
+  background-size: cover;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ================================================
+   SAKURA PETALS
+   ================================================ */
+
+.sakura-container {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.petal {
+  position: absolute;
+  top: -20px;
+  background: linear-gradient(135deg, #FFB7C5 0%, #FF99B0 100%);
+  border-radius: 50% 0 50% 50%;
+  animation: petalFall linear infinite;
+  pointer-events: none;
+  filter: blur(0.5px);
+}
+
+/* ================================================
+   AUTH CARD (Glassmorphism)
+   ================================================ */
+
+.auth-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 440px;
+  background: var(--bg-card);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--bg-card-border);
+  border-radius: var(--radius-lg);
+  padding: 40px 36px;
+  box-shadow: var(--shadow-lg);
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* ================================================
+   BRAND HEADER
+   ================================================ */
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.brand-name {
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.brand-japanese {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background: var(--primary-gradient);
+  color: white;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-japanese);
+  font-size: 1.3rem;
+  font-weight: 700;
+  animation: pulse 3s ease-in-out infinite;
+}
+
+.brand-tagline {
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  margin-top: 6px;
+  font-weight: 400;
+}
+
+/* ================================================
+   AUTH TITLE
+   ================================================ */
+
+.auth-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* ================================================
+   ERROR MESSAGE
+   ================================================ */
+
+.error-message {
+  background: #FFF0F0;
+  border: 1px solid #FFD4D4;
+  color: #C41E3A;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  animation: fadeInUp 0.3s ease;
+  line-height: 1.4;
+}
+
+.error-message::before {
+  content: '⚠';
+  font-size: 1rem;
+  flex-shrink: 0;
+  line-height: 1.3;
+}
+
+/* ================================================
+   FORM STYLES
+   ================================================ */
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  background: #ffffff;
+  transition: var(--transition);
+}
+
+.form-group input::placeholder {
+  color: var(--text-muted);
+}
+
+.form-group input:focus {
+  border-color: var(--border-focus);
+  box-shadow: var(--shadow-focus);
+}
+
+/* ---- Password field with toggle button ---- */
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 48px;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 4px;
+  opacity: 0.6;
+  transition: var(--transition-fast);
+  line-height: 1;
+}
+
+.password-toggle:hover {
+  opacity: 1;
+}
+
+/* ---- Form options row (Forgot Password) ---- */
+.form-options {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -8px;
+}
+
+.forgot-link {
+  font-size: 0.82rem;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* ================================================
+   BUTTONS
+   ================================================ */
+
+/* Primary action button */
+.btn-primary {
+  width: 100%;
+  padding: 12px 24px;
+  background: var(--primary-gradient);
+  color: var(--text-light);
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  letter-spacing: 0.3px;
+  margin-top: 4px;
+}
+
+.btn-primary:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(196, 30, 58, 0.35);
+}
+
+.btn-primary:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(196, 30, 58, 0.25);
+}
+
+.btn-primary:disabled {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
+/* Loading spinner inside buttons */
+.spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2.5px solid rgba(255, 255, 255, 0.35);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+/* ================================================
+   DIVIDER ("or" separator)
+   ================================================ */
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.divider span {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ================================================
+   GOOGLE BUTTON WRAPPER
+   ================================================ */
+
+.google-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Override Google button container for better alignment */
+.google-btn-wrapper > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* ================================================
+   AUTH PAGE SWITCH LINK
+   ================================================ */
+
+.auth-switch {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+.auth-switch a {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.auth-switch a:hover {
+  text-decoration: underline;
+}
+
+/* ================================================
+   LOADING SCREEN (session restore)
+   ================================================ */
+
+.loading-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background: var(--bg-primary);
+}
+
+.loading-screen p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--sakura);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+/* ================================================
+   DASHBOARD
+   ================================================ */
+
+.dashboard {
+  min-height: 100vh;
+  background: linear-gradient(160deg, #FFF8F0 0%, #FFF0F3 100%);
+}
+
+/* ---- Dashboard Navigation Bar ---- */
+.dashboard-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.dashboard-nav .brand-name {
+  font-size: 1.3rem;
+  gap: 8px;
+}
+
+.dashboard-nav .brand-japanese {
+  width: 32px;
+  height: 32px;
+  font-size: 1rem;
+  animation: none;
+}
+
+.btn-logout {
+  padding: 8px 20px;
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.btn-logout:hover {
+  background: #FFF0F0;
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+/* ---- Dashboard Content ---- */
+.dashboard-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.welcome-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--bg-card-border);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  box-shadow: var(--shadow-md);
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.welcome-card h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.welcome-card > p {
+  color: var(--text-secondary);
+  margin-top: 8px;
+  font-size: 0.95rem;
+}
+
+/* ---- Stats Grid ---- */
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 24px 16px;
+  background: linear-gradient(135deg, #FFF8F0 0%, #FFF0F3 100%);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  transition: var(--transition);
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-sm);
+}
+
+.stat-icon {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.stat-card h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.stat-card p {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+/* ================================================
+   FORGOT PASSWORD PLACEHOLDER PAGE
+   ================================================ */
+
+.forgot-page {
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.forgot-page h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.forgot-page p {
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.forgot-page a {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* ================================================
+   RESPONSIVE DESIGN
+   ================================================ */
+
+@media (max-width: 768px) {
+  .auth-card {
+    padding: 32px 24px;
+    border-radius: var(--radius-md);
+    max-width: 100%;
+  }
+
+  .brand-name {
+    font-size: 1.5rem;
+  }
+
+  .brand-japanese {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+  }
+
+  .auth-page {
+    padding: 16px;
+    align-items: flex-start;
+    padding-top: 48px;
+  }
+
+  .dashboard-nav {
+    padding: 12px 16px;
+  }
+
+  .dashboard-content {
+    padding: 24px 16px;
+  }
+
+  .welcome-card {
+    padding: 24px 20px;
+  }
+
+  .welcome-card h2 {
+    font-size: 1.25rem;
+  }
+
+  .dashboard-stats {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  .auth-card {
+    padding: 24px 18px;
+  }
+
+  .auth-title {
+    font-size: 1.15rem;
+  }
+
+  .brand-name {
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,304 @@
+/* Hero.css — Uses CSS custom properties from index.css design system */
+
+.hero-section {
+  position: relative;
+  min-height: calc(100vh - 70px);
+  padding-top: 70px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(160deg, #FFF8F0 0%, #FFE8EE 40%, #FFF0F3 70%, #FFF8F0 100%);
+  overflow: hidden;
+}
+
+.hero-background-decoration {
+  position: absolute;
+  top: -10%;
+  right: -5%;
+  width: 60vw;
+  height: 60vw;
+  background: radial-gradient(circle, rgba(255, 183, 178, 0.2) 0%, rgba(255, 183, 178, 0) 70%);
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero-container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-left {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--sakura-light, #ffe5e5);
+  color: var(--primary-dark, #d62828);
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  width: fit-content;
+  box-shadow: 0 2px 8px rgba(255, 183, 178, 0.3);
+}
+
+.hero-headline {
+  font-size: clamp(2.5rem, 4vw + 1rem, 3.8rem);
+  font-weight: 800;
+  font-family: 'Outfit', 'Inter', sans-serif;
+  color: var(--text-primary, #1a1a2e);
+  line-height: 1.15;
+  margin: 0;
+}
+
+.text-gradient {
+  background: var(--primary-gradient, linear-gradient(135deg, #ff4d4f 0%, #d62828 100%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-description {
+  font-size: 1.15rem;
+  color: var(--text-secondary, #4a4e69);
+  line-height: 1.7;
+  max-width: 520px;
+  margin: 0;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.hero-section .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  border-radius: var(--radius-md, 12px);
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: var(--transition, all 0.3s ease);
+  cursor: pointer;
+}
+
+.hero-section .btn-primary {
+  background: var(--primary-gradient, linear-gradient(135deg, #C41E3A 0%, #E8384F 100%));
+  color: white;
+  border: none;
+  box-shadow: 0 4px 12px rgba(196, 30, 58, 0.25);
+  min-height: auto;
+  width: auto;
+  margin-top: 0;
+  letter-spacing: normal;
+}
+
+.hero-section .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(196, 30, 58, 0.35);
+}
+
+.hero-section .btn-primary .arrow {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.hero-section .btn-primary:hover .arrow {
+  transform: translateX(4px);
+}
+
+.hero-section .btn-outline {
+  background: transparent;
+  color: var(--primary, #C41E3A);
+  border: 2px solid var(--primary, #C41E3A);
+}
+
+.hero-section .btn-outline:hover {
+  background: var(--primary, #C41E3A);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(196, 30, 58, 0.2);
+}
+
+.hero-trust {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-muted, #9fa0b8);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.hero-trust .dot {
+  font-weight: bold;
+}
+
+.hero-right {
+  width: 45%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.hero-image-wrapper {
+  position: relative;
+  animation: floatImage 6s ease-in-out infinite;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--radius-lg, 24px);
+  
+  /* Mask gradient for soft fading edges */
+  mask-image: linear-gradient(to right, transparent 0%, black 10%, black 85%, transparent 100%),
+              linear-gradient(to bottom, transparent 0%, black 10%, black 85%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 85%, transparent 100%),
+                      linear-gradient(to bottom, transparent 0%, black 10%, black 85%, transparent 100%);
+  mask-composite: intersect;
+  -webkit-mask-composite: source-in;
+  
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.glass-card {
+  position: absolute;
+  bottom: 8%;
+  left: -12%;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: var(--radius-md, 12px);
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  animation: fadeInUp 0.8s ease-out 1s both;
+}
+
+.card-icon {
+  font-size: 1.8rem;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary, #4a4e69);
+  font-weight: 600;
+}
+
+.card-number {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text-primary, #1a1a2e);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatImage {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.fade-in-up-1 { animation: fadeInUp 0.6s ease-out 0.1s both; }
+.fade-in-up-2 { animation: fadeInUp 0.6s ease-out 0.2s both; }
+.fade-in-up-3 { animation: fadeInUp 0.6s ease-out 0.3s both; }
+.fade-in-up-4 { animation: fadeInUp 0.6s ease-out 0.4s both; }
+.fade-in-up-5 { animation: fadeInUp 0.6s ease-out 0.5s both; }
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .hero-container {
+    padding: 0 40px;
+  }
+  
+  .hero-headline {
+    font-size: 3rem;
+  }
+  
+  .glass-card {
+    left: -5%;
+    padding: 12px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    padding: 40px 24px;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .hero-left {
+    width: 100%;
+    align-items: center;
+  }
+  
+  .hero-description {
+    max-width: 100%;
+  }
+  
+  .hero-buttons {
+    justify-content: center;
+  }
+  
+  .hero-trust {
+    justify-content: center;
+  }
+  
+  .hero-right {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .glass-card {
+    left: 10%;
+    bottom: -5%;
+  }
+  
+  .hero-background-decoration {
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vw;
+  }
+}
