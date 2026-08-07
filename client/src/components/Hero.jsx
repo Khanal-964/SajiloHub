@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="hero-left">
           <div className="hero-badge fade-in-up-1">
             <span className="badge-icon">🌸</span>
-            <span>#1 Japanese Learning Platform</span>
+            <span> Japanese Learning Platform</span>
           </div>
           
           <h1 className="hero-headline fade-in-up-2">

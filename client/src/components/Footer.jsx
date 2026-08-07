@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 import './Footer.css';
 
 const Footer = () => {
@@ -11,10 +13,10 @@ const Footer = () => {
             <h2>SajiloHub</h2>
             <p className="footer-tagline">Learn Japanese the Easy Way</p>
             <div className="footer-socials">
-              <a href="#" className="social-icon" aria-label="Facebook">📘</a>
-              <a href="#" className="social-icon" aria-label="Twitter">🐦</a>
-              <a href="#" className="social-icon" aria-label="Instagram">📸</a>
-              <a href="#" className="social-icon" aria-label="YouTube">▶</a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Facebook"><FaFacebook /></a>
+              <a href="https://x.com" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="X (Twitter)"><FaXTwitter /></a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Instagram"><FaInstagram /></a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="YouTube"><FaYoutube /></a>
             </div>
           </div>
           
@@ -43,7 +45,7 @@ const Footer = () => {
           <div className="footer-column">
             <h3>Resources</h3>
             <ul className="footer-links">
-              <li><a href="https://translate.google.com" target="_blank" rel="noopener noreferrer">Google Translator</a></li>
+              <li><Link to="/translator">Translator</Link></li>
               <li><Link to="/study-guide">Study Guide</Link></li>
               <li><Link to="/community">Community</Link></li>
               <li><Link to="/faq">FAQ</Link></li>

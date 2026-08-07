@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null);
   const location = useLocation();
+  const navRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,17 +17,64 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const closeMenu = () => setMobileMenuOpen(false);
+  // Close dropdowns when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setActiveDropdown(null);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  // Close dropdown on route change
+  useEffect(() => {
+    setActiveDropdown(null);
+    setMobileMenuOpen(false);
+  }, [location.pathname]);
+
+  const closeMenu = () => {
+    setMobileMenuOpen(false);
+    setActiveDropdown(null);
+  };
+
+  const toggleDropdown = (e, name) => {
+    e.preventDefault();
+    setActiveDropdown(activeDropdown === name ? null : name);
+  };
 
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Basic Learning', path: '/basic-learning' },
-    { name: 'Theory', path: '/theory' },
-    { name: 'JLPT Test', path: '/jlpt' },
+    { 
+      name: 'Theory', 
+      path: '/theory',
+      dropdown: [
+        { name: 'Theory N5', path: '/theory/n5', icon: '📝' },
+        { name: 'Theory N4', path: '/theory/n4', icon: '📘' },
+        { name: 'Theory N3', path: '/theory/n3', icon: '📗' },
+        { name: 'Theory N2', path: '/theory/n2', icon: '📙' },
+        { name: 'Theory N1', path: '/theory/n1', icon: '📕' },
+      ]
+    },
+    { 
+      name: 'JLPT Test', 
+      path: '/jlpt',
+      dropdown: [
+        { name: 'JLPT N5 Tests', path: '/jlpt/n5', icon: '🎯' },
+        { name: 'JLPT N4 Tests', path: '/jlpt/n4', icon: '🎯' },
+        { name: 'JLPT N3 Tests', path: '/jlpt/n3', icon: '🎯' },
+        { name: 'JLPT N2 Tests', path: '/jlpt/n2', icon: '🎯' },
+        { name: 'JLPT N1 Tests', path: '/jlpt/n1', icon: '🎯' },
+        { name: 'JLPT Boost', path: '/jlpt/boost', icon: '🚀' },
+        { name: 'JLPT Review', path: '/jlpt/review', icon: '⭐' },
+      ]
+    },
   ];
 
   return (
-    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} ref={navRef}>
       <div className="navbar-container">
         {/* Logo Section */}
         <Link to="/" className="navbar-logo" onClick={closeMenu}>
@@ -43,22 +92,41 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <div className="navbar-links">
           {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              to={link.path}
-              className={`nav-link ${location.pathname === link.path ? 'active' : ''}`}
+            <div 
+              key={link.name} 
+              className={`nav-item ${link.dropdown ? 'has-dropdown' : ''}`}
             >
-              {link.name}
-            </Link>
+              <Link
+                to={link.path}
+                className={`nav-link ${location.pathname.startsWith(link.path) && link.path !== '/' || (location.pathname === '/' && link.path === '/') ? 'active' : ''}`}
+                onClick={(e) => link.dropdown && window.innerWidth <= 968 ? toggleDropdown(e, link.name) : null}
+              >
+                {link.name}
+                {link.dropdown && <span className="dropdown-arrow">▼</span>}
+              </Link>
+              
+              {link.dropdown && (
+                <div className="dropdown-menu">
+                  {link.dropdown.map((item) => (
+                    <Link 
+                      key={item.name} 
+                      to={item.path} 
+                      className={`dropdown-item ${location.pathname === item.path ? 'active' : ''}`}
+                    >
+                      <span className="dropdown-icon">{item.icon}</span>
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
           ))}
-          <a
-            href="https://translate.google.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="nav-link"
+          <Link
+            to="/translator"
+            className={`nav-link ${location.pathname === '/translator' ? 'active' : ''}`}
           >
-            Google Translator
-          </a>
+            Translator
+          </Link>
         </div>
 
         {/* Right Actions */}
@@ -80,24 +148,52 @@ const Navbar = () => {
       <div className={`mobile-menu ${mobileMenuOpen ? 'open' : ''}`}>
         <div className="mobile-links">
           {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              to={link.path}
-              className={`mobile-link ${location.pathname === link.path ? 'active' : ''}`}
-              onClick={closeMenu}
-            >
-              {link.name}
-            </Link>
+            <div key={link.name} className="mobile-nav-item">
+              <div className="mobile-nav-header">
+                <Link
+                  to={link.path}
+                  className={`mobile-link ${location.pathname.startsWith(link.path) && link.path !== '/' || (location.pathname === '/' && link.path === '/') ? 'active' : ''}`}
+                  onClick={(e) => {
+                    if (link.dropdown) toggleDropdown(e, link.name);
+                    else closeMenu();
+                  }}
+                >
+                  {link.name}
+                </Link>
+                {link.dropdown && (
+                  <span 
+                    className={`mobile-dropdown-arrow ${activeDropdown === link.name ? 'open' : ''}`}
+                    onClick={(e) => toggleDropdown(e, link.name)}
+                  >
+                    ▼
+                  </span>
+                )}
+              </div>
+              
+              {link.dropdown && (
+                <div className={`mobile-dropdown ${activeDropdown === link.name ? 'open' : ''}`}>
+                  {link.dropdown.map((item) => (
+                    <Link
+                      key={item.name}
+                      to={item.path}
+                      className={`mobile-dropdown-item ${location.pathname === item.path ? 'active' : ''}`}
+                      onClick={closeMenu}
+                    >
+                      <span className="dropdown-icon">{item.icon}</span>
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
           ))}
-          <a
-            href="https://translate.google.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mobile-link"
+          <Link
+            to="/translator"
+            className={`mobile-link ${location.pathname === '/translator' ? 'active' : ''}`}
             onClick={closeMenu}
           >
-            Google Translator
-          </a>
+            Translator
+          </Link>
           <Link to="/login" className="mobile-login-btn" onClick={closeMenu}>
             Login
           </Link>
@@ -108,3 +204,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
