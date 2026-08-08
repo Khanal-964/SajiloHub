@@ -11,6 +11,12 @@ import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import Translator from './pages/Translator';
 import BasicLearning from './pages/BasicLearning/BasicLearning';
+import TheoryOverview from './pages/Theory/TheoryOverview';
+import TheoryLevel from './pages/Theory/TheoryLevel';
+import TheorySection from './pages/Theory/TheorySection';
+import GrammarLessonsList from './pages/Theory/GrammarLessonsList';
+import GrammarLessonView from './pages/Theory/GrammarLessonView';
+import GrammarTopicDetail from './pages/Theory/GrammarTopicDetail';
 import './App.css';
 
 /**
@@ -77,13 +83,22 @@ function App() {
       {/* Basic Learning (Interactive) */}
       <Route path="/basic-learning" element={<BasicLearning />} />
 
-      {/* Theory (Placeholder routes) */}
-      <Route path="/theory" element={<PlaceholderPage title="Theory Overview" />} />
-      <Route path="/theory/n5" element={<PlaceholderPage title="Theory N5" />} />
-      <Route path="/theory/n4" element={<PlaceholderPage title="Theory N4" />} />
-      <Route path="/theory/n3" element={<PlaceholderPage title="Theory N3" />} />
-      <Route path="/theory/n2" element={<PlaceholderPage title="Theory N2" />} />
-      <Route path="/theory/n1" element={<PlaceholderPage title="Theory N1" />} />
+      {/* Theory (Dynamic Module Routes) */}
+      <Route path="/theory" element={<TheoryOverview />} />
+      <Route path="/theory/:level" element={<TheoryLevel />} />
+      
+      {/* Explicit Grammar Course Routes */}
+      <Route path="/theory/n5/grammar" element={<GrammarLessonsList level="n5" />} />
+      <Route path="/theory/n4/grammar" element={<GrammarLessonsList level="n4" />} />
+      <Route path="/theory/n3/grammar" element={<GrammarLessonsList level="n3" />} />
+      <Route path="/theory/n2/grammar" element={<GrammarLessonsList level="n2" />} />
+      <Route path="/theory/n1/grammar" element={<GrammarLessonsList level="n1" />} />
+
+      {/* Lesson & Topic detail views */}
+      <Route path="/theory/:level/grammar/lesson/:lessonNum" element={<GrammarLessonView />} />
+      <Route path="/theory/:level/grammar/topic/:topicId" element={<GrammarTopicDetail />} />
+      
+      <Route path="/theory/:level/:section" element={<TheorySection />} />
 
       {/* JLPT Test (Placeholder routes) */}
       <Route path="/jlpt" element={<PlaceholderPage title="JLPT Tests Overview" />} />

@@ -1,0 +1,546 @@
+/* GrammarLessonView.css */
+
+.lesson-view-page {
+  min-height: 100vh;
+  padding: 135px 20px 80px;
+  background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Breadcrumbs */
+.lesson-view-breadcrumbs {
+  align-self: flex-start;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  animation: fadeInDown 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.lesson-view-breadcrumbs a {
+  color: var(--text-secondary);
+  transition: var(--transition-fast);
+}
+
+.lesson-view-breadcrumbs a:hover {
+  color: var(--primary);
+}
+
+.lesson-view-breadcrumbs .separator {
+  color: var(--text-muted);
+}
+
+.lesson-view-breadcrumbs .current {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* Page Container */
+.lesson-view-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  animation: fadeInUp 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Lesson Header Card */
+.lesson-view-header {
+  background: var(--bg-card);
+  border: 1px solid var(--bg-card-border);
+  border-radius: var(--radius-lg, 20px);
+  padding: 40px;
+  margin-bottom: 40px;
+  box-shadow: var(--shadow-sm);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.lesson-header-meta {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.lesson-badge-tag {
+  background-color: var(--bg-secondary);
+  color: var(--primary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(196, 30, 58, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.lesson-title-heading {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.lesson-subtitle-desc {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin-bottom: 25px;
+}
+
+/* Complete toggle button */
+.lesson-complete-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 28px;
+  border-radius: var(--radius-md, 12px);
+  background-color: #ffffff;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.lesson-complete-toggle-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.lesson-complete-toggle-btn.completed {
+  background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+  border-color: transparent;
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(46, 204, 113, 0.25);
+}
+
+.check-icon {
+  font-size: 0.9rem;
+}
+
+/* Accordion Sections */
+.lesson-topics-accordion {
+  margin-bottom: 45px;
+}
+
+.topics-heading {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+.topics-accordion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.topic-accordion-card {
+  background: var(--bg-card);
+  border: 1px solid var(--bg-card-border);
+  border-radius: var(--radius-md, 12px);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+}
+
+.topic-accordion-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(196, 30, 58, 0.2);
+}
+
+.topic-accordion-card.unimplemented {
+  border-left: 4px solid var(--border);
+}
+
+.topic-accordion-card.expanded {
+  background: #ffffff;
+}
+
+/* Accordion Trigger Row */
+.topic-accordion-trigger {
+  padding: 22px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+.trigger-left-col {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.pattern-jp-tag {
+  font-family: var(--font-japanese);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.pattern-pronounce {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.pattern-translation-summary {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.expansion-chevron-btn {
+  color: var(--text-muted);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.topic-accordion-card:hover .expansion-chevron-btn {
+  color: var(--primary);
+}
+
+/* Accordion Expand Panel */
+.topic-accordion-panel-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.topic-accordion-card.expanded .topic-accordion-panel-wrapper {
+  grid-template-rows: 1fr;
+  border-top: 1px dashed var(--border);
+}
+
+.topic-accordion-panel {
+  min-height: 0;
+  padding: 0 30px;
+  background-color: rgba(255, 248, 240, 0.3);
+}
+
+.topic-accordion-card.expanded .topic-accordion-panel {
+  padding: 24px 30px 30px;
+}
+
+/* Content Blocks inside accordion */
+.panel-block {
+  margin-bottom: 24px;
+}
+
+.panel-block h3 {
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  border-left: 3px solid var(--primary);
+  padding-left: 10px;
+}
+
+.panel-block p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Formula syntax box */
+.syntax-highlight-formula {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px 18px;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  display: inline-block;
+  font-weight: 600;
+}
+
+/* Examples list */
+.lesson-examples-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lesson-example-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 18px;
+  border-left: 3px solid var(--sakura);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.example-jp {
+  font-family: var(--font-japanese);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.example-en {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* Notes & Mistakes Grid */
+.usage-guide-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.guide-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.guide-card h3 {
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.notes-card {
+  border-top: 3px solid #3498db;
+}
+
+.notes-card h3 {
+  color: #2980b9;
+}
+
+.mistakes-card {
+  border-top: 3px solid var(--primary);
+}
+
+.mistakes-card h3 {
+  color: var(--primary-dark);
+}
+
+.guide-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* Clean Placeholder state */
+.unimplemented-topic-placeholder {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.placeholder-info-icon {
+  color: var(--primary);
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+/* Dedicated page navigation link button */
+.topic-dedicated-link-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dedicated-topic-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: var(--transition-fast);
+}
+
+.dedicated-topic-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.external-link-icon {
+  font-size: 0.75rem;
+}
+
+/* Lesson Navigation Pager triggers */
+.lesson-pager-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.pager-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 16px 24px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--bg-card-border);
+  border-radius: var(--radius-md, 12px);
+  color: var(--text-primary);
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  cursor: pointer;
+  max-width: 320px;
+}
+
+.prev-btn {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.next-btn {
+  justify-content: flex-end;
+  text-align: right;
+  margin-left: auto;
+}
+
+.pager-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary);
+  color: var(--primary);
+  background-color: #ffffff;
+}
+
+.pager-label-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.pager-tag {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pager-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.pager-btn-placeholder {
+  flex: 1;
+  max-width: 320px;
+}
+
+/* View index footer links */
+.lesson-view-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.back-to-course-btn {
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: var(--transition-fast);
+}
+
+.back-to-course-btn:hover {
+  color: var(--primary);
+}
+
+/* Responsive configurations */
+@media (max-width: 768px) {
+  .lesson-view-page {
+    padding: 110px 16px 60px;
+  }
+  
+  .lesson-view-header {
+    padding: 24px;
+  }
+
+  .lesson-title-heading {
+    font-size: 1.6rem;
+  }
+
+  .topic-accordion-trigger {
+    padding: 16px 20px;
+  }
+
+  .trigger-left-col {
+    gap: 8px;
+  }
+
+  .pattern-jp-tag {
+    font-size: 1.15rem;
+    width: 100%;
+  }
+
+  .topic-accordion-card.expanded .topic-accordion-panel {
+    padding: 20px;
+  }
+
+  .usage-guide-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .lesson-pager-navigation {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+  }
+  
+  .pager-btn {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .pager-btn-placeholder {
+    display: none;
+  }
+}

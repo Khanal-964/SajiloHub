@@ -1,0 +1,438 @@
+/* TheoryGrammar.css */
+
+.theory-grammar-page {
+  min-height: 100vh;
+  padding: 130px 20px 80px;
+  background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Breadcrumbs */
+.grammar-breadcrumbs {
+  align-self: flex-start;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto 35px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  animation: fadeInDown 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.grammar-breadcrumbs a {
+  color: var(--text-secondary);
+  transition: var(--transition-fast);
+}
+
+.grammar-breadcrumbs a:hover {
+  color: var(--primary);
+}
+
+.grammar-breadcrumbs .separator {
+  color: var(--text-muted);
+}
+
+.grammar-breadcrumbs .current {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* Page Container */
+.grammar-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  animation: fadeInUp 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Page Header */
+.grammar-page-header {
+  text-align: center;
+  margin-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grammar-header-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  background: var(--bg-secondary);
+  border: 1px solid rgba(196, 30, 58, 0.1);
+  color: var(--primary);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.grammar-subtitle {
+  text-transform: uppercase;
+  color: var(--primary);
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+}
+
+.grammar-title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 15px;
+}
+
+.grammar-description {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 700px;
+}
+
+/* Search Controls */
+.grammar-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.search-bar-wrapper {
+  position: relative;
+  flex: 1;
+  max-width: 500px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+.grammar-search-input {
+  width: 100%;
+  padding: 14px 20px 14px 48px;
+  border-radius: var(--radius-md, 12px);
+  border: 1px solid var(--border);
+  background-color: var(--bg-card);
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.grammar-search-input:focus {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-focus);
+  background-color: #ffffff;
+}
+
+.results-indicator {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* Grammar List and Cards */
+.grammar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.grammar-card-item {
+  background: var(--bg-card);
+  border: 1px solid var(--bg-card-border);
+  border-radius: var(--radius-md, 12px);
+  box-shadow: var(--shadow-sm);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+}
+
+.grammar-card-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(196, 30, 58, 0.2);
+}
+
+/* Header segment of card */
+.grammar-card-header {
+  padding: 24px 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.grammar-pattern-block {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.grammar-badge {
+  padding: 2px 8px;
+  background-color: var(--bg-secondary);
+  color: var(--primary);
+  font-size: 0.7rem;
+  font-weight: 700;
+  border-radius: 12px;
+  border: 1px solid rgba(196, 30, 58, 0.12);
+}
+
+.grammar-pattern-text {
+  font-family: var(--font-japanese);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.grammar-romaji-text {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.grammar-summary-meaning {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-top: 4px;
+}
+
+/* Expand Arrow Button */
+.grammar-expand-btn {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  transition: var(--transition);
+  cursor: pointer;
+  pointer-events: none; /* Let clicks trigger the card container instead */
+}
+
+.grammar-card-item:hover .grammar-expand-btn {
+  background-color: var(--primary);
+  color: #ffffff;
+  border-color: transparent;
+  transform: translateY(-50%) scale(1.05);
+}
+
+/* Panel Expansion heights grid-transition trick */
+.grammar-card-panel-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.grammar-card-item.expanded .grammar-card-panel-wrapper {
+  grid-template-rows: 1fr;
+  border-top: 1px dashed var(--border);
+}
+
+.grammar-card-panel {
+  min-height: 0;
+  padding: 0 30px;
+  transition: padding 0.3s ease;
+  background-color: rgba(255, 248, 240, 0.4);
+}
+
+.grammar-card-item.expanded .grammar-card-panel {
+  padding: 24px 30px 30px;
+}
+
+/* Sub sections inside expanded panel */
+.panel-section {
+  margin-bottom: 20px;
+}
+
+.panel-section:last-child {
+  margin-bottom: 0;
+}
+
+.panel-section h4 {
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  border-left: 3px solid var(--primary);
+  padding-left: 10px;
+}
+
+.panel-section p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Formula Syntax Box */
+.formula-box {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px 18px;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  display: inline-block;
+  font-weight: 600;
+}
+
+/* Example Sentence Items */
+.examples-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.example-item {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 12px 18px;
+  border-left: 3px solid var(--sakura);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+
+.jp-sentence {
+  font-family: var(--font-japanese);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.en-sentence {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+/* Future Notice notice */
+.future-notice-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--bg-secondary);
+  border: 1px solid rgba(196, 30, 58, 0.08);
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.notice-icon {
+  color: var(--primary);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+/* No Results card */
+.no-results-card {
+  text-align: center;
+  background: var(--bg-card);
+  border: 1px dashed var(--border);
+  padding: 40px;
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+}
+
+/* Nav Footer and Back Links */
+.grammar-footer-nav {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+
+.grammar-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+
+.grammar-back-link:hover {
+  color: var(--primary);
+  transform: translateX(-4px);
+}
+
+/* Responsive configurations */
+@media (max-width: 768px) {
+  .theory-grammar-page {
+    padding: 110px 16px 60px;
+  }
+
+  .grammar-title {
+    font-size: 2rem;
+  }
+  
+  .grammar-controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .search-bar-wrapper {
+    max-width: 100%;
+  }
+
+  .results-indicator {
+    text-align: left;
+  }
+
+  .grammar-card-header {
+    padding: 20px;
+    padding-right: 60px;
+  }
+
+  .grammar-expand-btn {
+    right: 20px;
+  }
+
+  .grammar-card-item.expanded .grammar-card-panel {
+    padding: 20px;
+  }
+
+  .grammar-pattern-text {
+    font-size: 1.2rem;
+  }
+
+  .formula-box {
+    width: 100%;
+    overflow-x: auto;
+  }
+}

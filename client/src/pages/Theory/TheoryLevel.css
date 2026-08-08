@@ -1,0 +1,147 @@
+/* TheoryLevel.css */
+
+.theory-level-page {
+  min-height: 100vh;
+  padding: 130px 20px 80px;
+  background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Breadcrumbs Styling */
+.theory-breadcrumbs {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  animation: fadeInDown 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  color: var(--text-secondary);
+}
+
+.theory-breadcrumbs a {
+  color: var(--text-secondary);
+  transition: var(--transition-fast);
+}
+
+.theory-breadcrumbs a:hover {
+  color: var(--primary);
+}
+
+.theory-breadcrumbs .separator {
+  color: var(--text-muted);
+}
+
+.theory-breadcrumbs .current {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* Level Header Section */
+.level-header {
+  text-align: center;
+  max-width: 750px;
+  margin-bottom: 50px;
+  animation: fadeInDown 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.level-jp-title {
+  font-family: var(--font-japanese);
+  color: var(--primary);
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.level-main-title {
+  font-family: var(--font-heading);
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 15px;
+}
+
+.level-desc {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Sections Grid */
+.level-sections {
+  width: 100%;
+  animation: fadeInUp 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.sections-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+}
+
+/* Back Link Wrapper */
+.back-link-wrapper {
+  margin-top: 50px;
+  animation: fadeInUp 0.9s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.back-to-overview-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 30px;
+  background: var(--bg-card);
+  border: 1px solid var(--bg-card-border);
+  border-radius: var(--radius-md, 12px);
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+.back-to-overview-btn:hover {
+  transform: translateX(-4px);
+  color: var(--primary);
+  border-color: rgba(196, 30, 58, 0.2);
+  box-shadow: var(--shadow-md);
+  background: #ffffff;
+}
+
+/* Grid layout media queries */
+@media (max-width: 992px) {
+  .sections-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .theory-level-page {
+    padding: 110px 16px 60px;
+  }
+  
+  .level-main-title {
+    font-size: 2rem;
+  }
+  
+  .level-desc {
+    font-size: 1rem;
+  }
+
+  .sections-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .back-link-wrapper {
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,185 @@
+/* TheoryCard.css */
+
+.theory-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 35px 30px;
+  background: var(--bg-card, rgba(255, 255, 255, 0.88));
+  border: 1px solid var(--bg-card-border, rgba(255, 255, 255, 0.45));
+  border-radius: var(--radius-lg, 20px);
+  box-shadow: var(--shadow-sm, 0 4px 12px rgba(0, 0, 0, 0.03));
+  text-decoration: none;
+  color: var(--text-primary);
+  text-align: left;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Subtle glow in the corner, becomes visible on hover */
+.theory-card-glow {
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  filter: blur(30px);
+  opacity: 0.15;
+  transition: all 0.5s ease;
+  pointer-events: none;
+}
+
+/* Hover States */
+.theory-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg, 0 20px 40px rgba(0, 0, 0, 0.08));
+  border-color: rgba(196, 30, 58, 0.25);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.theory-card:hover .theory-card-glow {
+  opacity: 0.35;
+  transform: scale(1.3);
+}
+
+/* Badge style */
+.theory-card-badge {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  padding: 4px 12px;
+  background-color: var(--bg-secondary, #FFE8EE);
+  color: var(--primary, #C41E3A);
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 20px;
+  border: 1px solid rgba(196, 30, 58, 0.12);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Icon styles */
+.theory-card-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  background: var(--bg-primary, #FFF8F0);
+  border: 1px solid rgba(196, 30, 58, 0.08);
+  margin-bottom: 24px;
+  color: var(--primary);
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+}
+
+.theory-card:hover .theory-card-icon-wrapper {
+  background: var(--primary-gradient);
+  color: var(--text-light, #ffffff);
+  transform: scale(1.05) rotate(3deg);
+  border-color: transparent;
+  box-shadow: 0 4px 15px rgba(196, 30, 58, 0.2);
+}
+
+.theory-card-react-icon {
+  display: block;
+}
+
+.theory-card-emoji-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+/* Body Content */
+.theory-card-body {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.theory-card-japanese-title {
+  display: block;
+  font-family: var(--font-japanese);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+  letter-spacing: 1px;
+}
+
+.theory-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.theory-card-description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+/* Card action arrow indicators */
+.theory-card-arrow {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1.1rem;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.arrow-line {
+  width: 0;
+  height: 2px;
+  background-color: var(--primary);
+  display: inline-block;
+  transition: all 0.3s ease;
+  margin-right: 0;
+}
+
+.arrow-head {
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.theory-card:hover .theory-card-arrow {
+  opacity: 1;
+  color: var(--primary-dark);
+}
+
+.theory-card:hover .arrow-line {
+  width: 15px;
+  margin-right: 6px;
+}
+
+.theory-card:hover .arrow-head {
+  transform: translateX(2px);
+}
+
+/* Responsive fixes */
+@media (max-width: 576px) {
+  .theory-card {
+    padding: 25px 20px;
+  }
+  
+  .theory-card-icon-wrapper {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    margin-bottom: 18px;
+  }
+
+  .theory-card-title {
+    font-size: 1.25rem;
+  }
+}
