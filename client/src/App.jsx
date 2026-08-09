@@ -3,7 +3,7 @@
 // Handles protected and guest routes
 // ============================================
 
-import { Routes, Route, Navigate, Link } from 'react-router-dom';
+import { Routes, Route, Navigate, Link, useLocation } from 'react-router-dom';
 import { useAuth } from './context/AuthContext';
 import Homepage from './pages/Homepage';
 import Login from './pages/Login';
@@ -17,15 +17,20 @@ import TheorySection from './pages/Theory/TheorySection';
 import GrammarLessonsList from './pages/Theory/GrammarLessonsList';
 import GrammarLessonView from './pages/Theory/GrammarLessonView';
 import GrammarTopicDetail from './pages/Theory/GrammarTopicDetail';
+import VocabularyLessonsList from './pages/Theory/VocabularyLessonsList';
+import VocabularyLessonView from './pages/Theory/VocabularyLessonView';
+import KanjiLessonsList from './pages/Theory/KanjiLessonsList';
+import KanjiLessonView from './pages/Theory/KanjiLessonView';
 import './App.css';
 
 /**
  * ProtectedRoute — only accessible to authenticated users.
  * Shows a loading spinner while the session is being verified,
- * then redirects to /login if no user is found.
+ * then redirects to /login if no user is found, storing the requested location.
  */
 const ProtectedRoute = ({ children }) => {
   const { user, loading } = useAuth();
+  const location = useLocation();
 
   if (loading) {
     return (
@@ -36,12 +41,12 @@ const ProtectedRoute = ({ children }) => {
     );
   }
 
-  return user ? children : <Navigate to="/login" replace />;
+  return user ? children : <Navigate to="/login" state={{ from: location }} replace />;
 };
 
 /**
  * GuestRoute — only accessible to unauthenticated users.
- * Redirects authenticated users to /dashboard.
+ * Redirects authenticated users to the home page (/).
  */
 const GuestRoute = ({ children }) => {
   const { user, loading } = useAuth();
@@ -55,7 +60,7 @@ const GuestRoute = ({ children }) => {
     );
   }
 
-  return !user ? children : <Navigate to="/dashboard" replace />;
+  return !user ? children : <Navigate to="/" replace />;
 };
 
 /**
@@ -80,35 +85,55 @@ function App() {
       {/* Translator (public) */}
       <Route path="/translator" element={<Translator />} />
 
-      {/* Basic Learning (Interactive) */}
-      <Route path="/basic-learning" element={<BasicLearning />} />
+      {/* Basic Learning (Protected) */}
+      <Route path="/basic-learning" element={<ProtectedRoute><BasicLearning /></ProtectedRoute>} />
 
-      {/* Theory (Dynamic Module Routes) */}
-      <Route path="/theory" element={<TheoryOverview />} />
-      <Route path="/theory/:level" element={<TheoryLevel />} />
+      {/* Theory (Protected) */}
+      <Route path="/theory" element={<ProtectedRoute><TheoryOverview /></ProtectedRoute>} />
+      <Route path="/theory/:level" element={<ProtectedRoute><TheoryLevel /></ProtectedRoute>} />
       
-      {/* Explicit Grammar Course Routes */}
-      <Route path="/theory/n5/grammar" element={<GrammarLessonsList level="n5" />} />
-      <Route path="/theory/n4/grammar" element={<GrammarLessonsList level="n4" />} />
-      <Route path="/theory/n3/grammar" element={<GrammarLessonsList level="n3" />} />
-      <Route path="/theory/n2/grammar" element={<GrammarLessonsList level="n2" />} />
-      <Route path="/theory/n1/grammar" element={<GrammarLessonsList level="n1" />} />
+      {/* Explicit Grammar Course Routes (Protected) */}
+      <Route path="/theory/n5/grammar" element={<ProtectedRoute><GrammarLessonsList level="n5" /></ProtectedRoute>} />
+      <Route path="/theory/n4/grammar" element={<ProtectedRoute><GrammarLessonsList level="n4" /></ProtectedRoute>} />
+      <Route path="/theory/n3/grammar" element={<ProtectedRoute><GrammarLessonsList level="n3" /></ProtectedRoute>} />
+      <Route path="/theory/n2/grammar" element={<ProtectedRoute><GrammarLessonsList level="n2" /></ProtectedRoute>} />
+      <Route path="/theory/n1/grammar" element={<ProtectedRoute><GrammarLessonsList level="n1" /></ProtectedRoute>} />
 
-      {/* Lesson & Topic detail views */}
-      <Route path="/theory/:level/grammar/lesson/:lessonNum" element={<GrammarLessonView />} />
-      <Route path="/theory/:level/grammar/topic/:topicId" element={<GrammarTopicDetail />} />
+      {/* Lesson & Topic detail views for Grammar (Protected) */}
+      <Route path="/theory/:level/grammar/lesson/:lessonNum" element={<ProtectedRoute><GrammarLessonView /></ProtectedRoute>} />
+      <Route path="/theory/:level/grammar/topic/:topicId" element={<ProtectedRoute><GrammarTopicDetail /></ProtectedRoute>} />
+
+      {/* Explicit Vocabulary Course Routes (Protected) */}
+      <Route path="/theory/n5/vocabulary" element={<ProtectedRoute><VocabularyLessonsList level="n5" /></ProtectedRoute>} />
+      <Route path="/theory/n4/vocabulary" element={<ProtectedRoute><VocabularyLessonsList level="n4" /></ProtectedRoute>} />
+      <Route path="/theory/n3/vocabulary" element={<ProtectedRoute><VocabularyLessonsList level="n3" /></ProtectedRoute>} />
+      <Route path="/theory/n2/vocabulary" element={<ProtectedRoute><VocabularyLessonsList level="n2" /></ProtectedRoute>} />
+      <Route path="/theory/n1/vocabulary" element={<ProtectedRoute><VocabularyLessonsList level="n1" /></ProtectedRoute>} />
       
-      <Route path="/theory/:level/:section" element={<TheorySection />} />
+      {/* Lesson detail view for Vocabulary (Protected) */}
+      <Route path="/theory/:level/vocabulary/lesson/:lessonNum" element={<ProtectedRoute><VocabularyLessonView /></ProtectedRoute>} />
+      
+      {/* Explicit Kanji Course Routes (Protected) */}
+      <Route path="/theory/n5/kanji" element={<ProtectedRoute><KanjiLessonsList level="n5" /></ProtectedRoute>} />
+      <Route path="/theory/n4/kanji" element={<ProtectedRoute><KanjiLessonsList level="n4" /></ProtectedRoute>} />
+      <Route path="/theory/n3/kanji" element={<ProtectedRoute><KanjiLessonsList level="n3" /></ProtectedRoute>} />
+      <Route path="/theory/n2/kanji" element={<ProtectedRoute><KanjiLessonsList level="n2" /></ProtectedRoute>} />
+      <Route path="/theory/n1/kanji" element={<ProtectedRoute><KanjiLessonsList level="n1" /></ProtectedRoute>} />
+      
+      {/* Lesson detail view for Kanji (Protected) */}
+      <Route path="/theory/:level/kanji/lesson/:lessonNum" element={<ProtectedRoute><KanjiLessonView /></ProtectedRoute>} />
 
-      {/* JLPT Test (Placeholder routes) */}
-      <Route path="/jlpt" element={<PlaceholderPage title="JLPT Tests Overview" />} />
-      <Route path="/jlpt/n5" element={<PlaceholderPage title="JLPT N5 Tests" />} />
-      <Route path="/jlpt/n4" element={<PlaceholderPage title="JLPT N4 Tests" />} />
-      <Route path="/jlpt/n3" element={<PlaceholderPage title="JLPT N3 Tests" />} />
-      <Route path="/jlpt/n2" element={<PlaceholderPage title="JLPT N2 Tests" />} />
-      <Route path="/jlpt/n1" element={<PlaceholderPage title="JLPT N1 Tests" />} />
-      <Route path="/jlpt/boost" element={<PlaceholderPage title="JLPT Boost" />} />
-      <Route path="/jlpt/review" element={<PlaceholderPage title="JLPT Review" />} />
+      <Route path="/theory/:level/:section" element={<ProtectedRoute><TheorySection /></ProtectedRoute>} />
+
+      {/* JLPT Test (Protected) */}
+      <Route path="/jlpt" element={<ProtectedRoute><PlaceholderPage title="JLPT Tests Overview" /></ProtectedRoute>} />
+      <Route path="/jlpt/n5" element={<ProtectedRoute><PlaceholderPage title="JLPT N5 Tests" /></ProtectedRoute>} />
+      <Route path="/jlpt/n4" element={<ProtectedRoute><PlaceholderPage title="JLPT N4 Tests" /></ProtectedRoute>} />
+      <Route path="/jlpt/n3" element={<ProtectedRoute><PlaceholderPage title="JLPT N3 Tests" /></ProtectedRoute>} />
+      <Route path="/jlpt/n2" element={<ProtectedRoute><PlaceholderPage title="JLPT N2 Tests" /></ProtectedRoute>} />
+      <Route path="/jlpt/n1" element={<ProtectedRoute><PlaceholderPage title="JLPT N1 Tests" /></ProtectedRoute>} />
+      <Route path="/jlpt/boost" element={<ProtectedRoute><PlaceholderPage title="JLPT Boost" /></ProtectedRoute>} />
+      <Route path="/jlpt/review" element={<ProtectedRoute><PlaceholderPage title="JLPT Review" /></ProtectedRoute>} />
 
       {/* Guest-only routes */}
       <Route
@@ -128,16 +153,8 @@ function App() {
         }
       />
 
-      {/* Protected routes */}
-      <Route
-        path="/dashboard"
-        element={
-          <ProtectedRoute>
-            <Dashboard />
-          </ProtectedRoute>
-        }
-      />
-
+      {/* Note: Dashboard route removed from auth flow as Home is the main page now */}
+      
       {/* Forgot Password — UI placeholder */}
       <Route
         path="/forgot-password"

@@ -1,0 +1,304 @@
+.kanji-lesson-view {
+  padding: 120px 20px 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.lesson-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.back-link {
+  display: inline-block;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 15px;
+  transition: opacity 0.3s;
+}
+
+.back-link:hover {
+  opacity: 0.8;
+}
+
+.lesson-header h1 {
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin-bottom: 15px;
+}
+
+.lesson-progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.progress-text {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.complete-btn {
+  background: var(--bg-color);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.complete-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.complete-btn.completed {
+  background: var(--success);
+  border-color: var(--success);
+  color: white;
+}
+
+/* Flashcard Styles */
+.kanji-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.kanji-card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.kanji-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary);
+}
+
+.kanji-display {
+  flex: 0 0 250px;
+  background: var(--primary-gradient);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  color: white;
+  border-right: 1px solid var(--border);
+}
+
+.main-character {
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: normal;
+  margin-bottom: 10px;
+  font-family: "Klee One", "Yu Mincho", "MS Mincho", serif;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.kanji-meaning-badge {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 15px;
+  border-radius: var(--radius-full);
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+
+.kanji-details {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Readings */
+.reading-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background: var(--bg-color);
+  padding: 15px;
+  border-radius: var(--radius-md);
+  border: 1px dashed var(--border);
+}
+
+.reading-group h3 {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.reading-group p {
+  font-size: 1.2rem;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+/* Metadata */
+.metadata-section {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-color);
+  padding: 8px 15px;
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  border: 1px solid var(--border);
+}
+
+.meta-label {
+  color: var(--text-secondary);
+  font-weight: bold;
+}
+
+.meta-value {
+  color: var(--text-primary);
+}
+
+/* Stroke Guide */
+.stroke-guide-section h3 {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 5px;
+}
+
+.stroke-guide-section p {
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Compounds */
+.compounds-section h3 {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 5px;
+}
+
+.compounds-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.compound-item {
+  background: var(--bg-color);
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--secondary);
+}
+
+.compound-word {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 5px;
+  font-family: "Klee One", "Yu Mincho", "MS Mincho", serif;
+}
+
+.compound-reading {
+  font-size: 0.85rem;
+  color: var(--primary);
+  margin-bottom: 3px;
+}
+
+.compound-meaning {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* Lesson Navigation */
+.lesson-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px solid var(--border);
+}
+
+.nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  background: var(--surface);
+  color: var(--primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover:not(.disabled) {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.nav-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .kanji-card {
+    flex-direction: column;
+  }
+  
+  .kanji-display {
+    flex: 0 0 auto;
+    padding: 40px 20px;
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+  
+  .reading-section {
+    grid-template-columns: 1fr;
+  }
+  
+  .lesson-navigation {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .nav-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

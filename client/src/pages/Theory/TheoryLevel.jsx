@@ -4,7 +4,7 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import SakuraPetals from '../../components/SakuraPetals';
 import TheoryCard from '../../components/TheoryCard';
-import { FaBook, FaLanguage, FaListUl } from 'react-icons/fa';
+import { FaBook, FaLanguage, FaListUl, FaPenNib } from 'react-icons/fa';
 import './TheoryLevel.css';
 
 const LEVEL_METADATA = {
@@ -53,14 +53,14 @@ const SECTIONS = [
     title: 'Vocabulary',
     japaneseTitle: '単語 (Tango)',
     icon: FaListUl,
-    description: 'Word banks categorized by theme, part of speech, and usage context. Includes audio guides. Content Coming Soon.',
+    description: 'Master strictly curated JLPT vocabulary. Comprehensive word banks with English meanings to expand your vocabulary.',
   },
   {
     key: 'kanji',
     title: 'Kanji',
     japaneseTitle: '漢字 (Kanji)',
-    icon: FaLanguage,
-    description: 'Learn kanji through radical breakdowns, writing order animations, readings, and mnemonics. Content Coming Soon.',
+    icon: FaPenNib,
+    description: 'Learn Kanji radicals, stroke orders, Onyomi/Kunyomi readings, and vocabulary compounds with detailed flashcards.',
   },
 ];
 

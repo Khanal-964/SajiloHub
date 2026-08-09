@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -8,6 +9,16 @@ const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const location = useLocation();
   const navRef = useRef(null);
+  const { user, logout } = useAuth();
+
+  const handleLogout = async () => {
+    try {
+      await logout();
+      closeMenu();
+    } catch (error) {
+      console.error("Logout failed", error);
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -131,9 +142,15 @@ const Navbar = () => {
 
         {/* Right Actions */}
         <div className="navbar-actions">
-          <Link to="/login" className="login-btn">
-            Login
-          </Link>
+          {user ? (
+            <button onClick={handleLogout} className="login-btn" style={{ border: 'none', cursor: 'pointer', fontFamily: 'inherit' }}>
+              Logout
+            </button>
+          ) : (
+            <Link to="/login" className="login-btn">
+              Login
+            </Link>
+          )}
           
           {/* Hamburger Menu Icon */}
           <div className="hamburger" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -194,9 +211,15 @@ const Navbar = () => {
           >
             Translator
           </Link>
-          <Link to="/login" className="mobile-login-btn" onClick={closeMenu}>
-            Login
-          </Link>
+          {user ? (
+            <button onClick={handleLogout} className="mobile-login-btn" style={{ border: 'none', width: '100%', cursor: 'pointer', fontFamily: 'inherit', textAlign: 'center' }}>
+              Logout
+            </button>
+          ) : (
+            <Link to="/login" className="mobile-login-btn" onClick={closeMenu}>
+              Login
+            </Link>
+          )}
         </div>
       </div>
     </nav>

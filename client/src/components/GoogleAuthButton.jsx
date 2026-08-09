@@ -5,7 +5,7 @@
 
 import { GoogleLogin } from '@react-oauth/google';
 import { useAuth } from '../context/AuthContext';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 /**
  * Renders the official Google Sign-In button.
@@ -17,11 +17,14 @@ import { useNavigate } from 'react-router-dom';
 const GoogleAuthButton = ({ onError }) => {
   const { googleAuth } = useAuth();
   const navigate = useNavigate();
+  const location = useLocation();
+
+  const from = location.state?.from?.pathname || '/';
 
   const handleSuccess = async (credentialResponse) => {
     try {
       await googleAuth(credentialResponse.credential);
-      navigate('/dashboard');
+      navigate(from, { replace: true });
     } catch (err) {
       const message =
         err.response?.data?.message || 'Google authentication failed. Please try again.';

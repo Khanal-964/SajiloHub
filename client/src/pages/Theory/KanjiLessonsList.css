@@ -1,0 +1,222 @@
+.kanji-list-container {
+  padding: 120px 20px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.kanji-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.kanji-header h1 {
+  font-size: 2.8rem;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
+}
+
+.kanji-header p {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Learning Concepts Section */
+.kanji-concepts-section {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  margin-bottom: 50px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+}
+
+.kanji-concepts-section h2 {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.concepts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.concept-card {
+  background: var(--bg-color);
+  padding: 20px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+}
+
+.concept-card h3 {
+  color: var(--primary);
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.concept-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.concept-examples {
+  background: var(--surface);
+  padding: 15px;
+  border-radius: var(--radius-sm);
+  border: 1px dashed var(--border);
+}
+
+.example-item {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.example-item:last-child {
+  margin-bottom: 0;
+}
+
+.example-kanji {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--secondary);
+  margin-right: 8px;
+}
+
+.concept-points {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.concept-points li {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+/* Search Box */
+.search-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+}
+
+.search-input {
+  width: 100%;
+  padding: 15px 15px 15px 45px;
+  border-radius: var(--radius-full);
+  border: 2px solid var(--border);
+  background: var(--surface);
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1);
+}
+
+/* Lessons Grid */
+.lessons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.lesson-card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 25px;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.lesson-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary);
+}
+
+.lesson-status {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--border);
+  transition: background 0.3s;
+}
+
+.lesson-status.completed {
+  background: var(--success);
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.4);
+}
+
+.lesson-info h2 {
+  font-size: 1.4rem;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+  padding-right: 20px;
+}
+
+.lesson-stats {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.stat-badge {
+  background: var(--bg-color);
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  border: 1px solid var(--border);
+}
+
+.lesson-preview {
+  margin-top: auto;
+  padding-top: 15px;
+  border-top: 1px solid var(--border);
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.no-results {
+  text-align: center;
+  padding: 40px;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+}

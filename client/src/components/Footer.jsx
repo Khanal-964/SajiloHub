@@ -23,11 +23,11 @@ const Footer = () => {
           <div className="footer-column">
             <h3>Learning</h3>
             <ul className="footer-links">
-              <li><Link to="/hiragana">Hiragana</Link></li>
-              <li><Link to="/katakana">Katakana</Link></li>
-              <li><Link to="/kanji">Kanji</Link></li>
-              <li><Link to="/grammar">Grammar</Link></li>
-              <li><Link to="/vocabulary">Vocabulary</Link></li>
+              <li><Link to="/basic-learning">Hiragana</Link></li>
+              <li><Link to="/basic-learning">Katakana</Link></li>
+              <li><Link to="/theory/n5/kanji">Kanji</Link></li>
+              <li><Link to="/theory/n5/grammar">Grammar</Link></li>
+              <li><Link to="/theory/n5/vocabulary">Vocabulary</Link></li>
             </ul>
           </div>
           
