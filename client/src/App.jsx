@@ -14,6 +14,10 @@ import BasicLearning from './pages/BasicLearning/BasicLearning';
 import TheoryOverview from './pages/Theory/TheoryOverview';
 import TheoryLevel from './pages/Theory/TheoryLevel';
 import TheorySection from './pages/Theory/TheorySection';
+import JlptOverview from './pages/JLPT/JlptOverview';
+import JlptLevel from './pages/JLPT/JlptLevel';
+import JlptTestEngine from './pages/JLPT/JlptTestEngine';
+import JlptResult from './pages/JLPT/JlptResult';
 import GrammarLessonsList from './pages/Theory/GrammarLessonsList';
 import GrammarLessonView from './pages/Theory/GrammarLessonView';
 import GrammarTopicDetail from './pages/Theory/GrammarTopicDetail';
@@ -126,14 +130,10 @@ function App() {
       <Route path="/theory/:level/:section" element={<ProtectedRoute><TheorySection /></ProtectedRoute>} />
 
       {/* JLPT Test (Protected) */}
-      <Route path="/jlpt" element={<ProtectedRoute><PlaceholderPage title="JLPT Tests Overview" /></ProtectedRoute>} />
-      <Route path="/jlpt/n5" element={<ProtectedRoute><PlaceholderPage title="JLPT N5 Tests" /></ProtectedRoute>} />
-      <Route path="/jlpt/n4" element={<ProtectedRoute><PlaceholderPage title="JLPT N4 Tests" /></ProtectedRoute>} />
-      <Route path="/jlpt/n3" element={<ProtectedRoute><PlaceholderPage title="JLPT N3 Tests" /></ProtectedRoute>} />
-      <Route path="/jlpt/n2" element={<ProtectedRoute><PlaceholderPage title="JLPT N2 Tests" /></ProtectedRoute>} />
-      <Route path="/jlpt/n1" element={<ProtectedRoute><PlaceholderPage title="JLPT N1 Tests" /></ProtectedRoute>} />
-      <Route path="/jlpt/boost" element={<ProtectedRoute><PlaceholderPage title="JLPT Boost" /></ProtectedRoute>} />
-      <Route path="/jlpt/review" element={<ProtectedRoute><PlaceholderPage title="JLPT Review" /></ProtectedRoute>} />
+      <Route path="/jlpt" element={<ProtectedRoute><JlptOverview /></ProtectedRoute>} />
+      <Route path="/jlpt/:level" element={<ProtectedRoute><JlptLevel /></ProtectedRoute>} />
+      <Route path="/jlpt/:level/test/:testId" element={<ProtectedRoute><JlptTestEngine /></ProtectedRoute>} />
+      <Route path="/jlpt/:level/test/:testId/results" element={<ProtectedRoute><JlptResult /></ProtectedRoute>} />
 
       {/* Guest-only routes */}
       <Route

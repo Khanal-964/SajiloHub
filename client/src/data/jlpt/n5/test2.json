@@ -1,0 +1,820 @@
+{
+  "id": "n5-test-2",
+  "level": "N5",
+  "title": "JLPT N5 Practice Test 2",
+  "sections": {
+    "vocabulary": {
+      "timeLimit": 25,
+      "questions": [
+        {
+          "id": "v1",
+          "type": "kanji-reading",
+          "question": "この【男】の人はだれですか。",
+          "options": [
+            "おとこ",
+            "おんな",
+            "ひと",
+            "こども"
+          ],
+          "correctAnswer": 0,
+          "explanation": "男 (おとこ) means 'man' or 'male'."
+        },
+        {
+          "id": "v2",
+          "type": "kanji-reading",
+          "question": "【川】で泳ぎます。",
+          "options": [
+            "やま",
+            "うみ",
+            "かわ",
+            "いけ"
+          ],
+          "correctAnswer": 2,
+          "explanation": "川 (かわ) means 'river'."
+        },
+        {
+          "id": "v3",
+          "type": "kanji-reading",
+          "question": "【百】円のりんごを買いました。",
+          "options": [
+            "ひゃく",
+            "せん",
+            "まん",
+            "じゅう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "百 (ひゃく) means 'hundred'."
+        },
+        {
+          "id": "v4",
+          "type": "kanji-reading",
+          "question": "【手】を洗ってください。",
+          "options": [
+            "あし",
+            "め",
+            "て",
+            "くち"
+          ],
+          "correctAnswer": 2,
+          "explanation": "手 (て) means 'hand'."
+        },
+        {
+          "id": "v5",
+          "type": "kanji-reading",
+          "question": "あしたは【月曜日】です。",
+          "options": [
+            "げつようび",
+            "かようび",
+            "すいようび",
+            "もくようび"
+          ],
+          "correctAnswer": 0,
+          "explanation": "月曜日 (げつようび) means 'Monday'."
+        },
+        {
+          "id": "v6",
+          "type": "kanji-reading",
+          "question": "あの【山】は高いですね。",
+          "options": [
+            "かわ",
+            "うみ",
+            "やま",
+            "そら"
+          ],
+          "correctAnswer": 2,
+          "explanation": "山 (やま) means 'mountain'."
+        },
+        {
+          "id": "v7",
+          "type": "kanji-reading",
+          "question": "【白い】シャツを着ます。",
+          "options": [
+            "あかい",
+            "あおい",
+            "しろい",
+            "くろい"
+          ],
+          "correctAnswer": 2,
+          "explanation": "白い (しろい) means 'white'."
+        },
+        {
+          "id": "v8",
+          "type": "orthography",
+          "question": "【がくせい】がたくさんいます。",
+          "options": [
+            "学校",
+            "学生",
+            "先生",
+            "会社"
+          ],
+          "correctAnswer": 1,
+          "explanation": "学生 (がくせい) is the kanji for student."
+        },
+        {
+          "id": "v9",
+          "type": "orthography",
+          "question": "あの【くるま】はだれのですか。",
+          "options": [
+            "車",
+            "電車",
+            "自転車",
+            "道"
+          ],
+          "correctAnswer": 0,
+          "explanation": "車 (くるま) is the kanji for car."
+        },
+        {
+          "id": "v10",
+          "type": "orthography",
+          "question": "【きんようび】は休みです。",
+          "options": [
+            "月曜日",
+            "火曜日",
+            "木曜日",
+            "金曜日"
+          ],
+          "correctAnswer": 3,
+          "explanation": "金曜日 (きんようび) is the kanji for Friday."
+        },
+        {
+          "id": "v11",
+          "type": "orthography",
+          "question": "【ひだり】に曲がります。",
+          "options": [
+            "右",
+            "左",
+            "上",
+            "下"
+          ],
+          "correctAnswer": 1,
+          "explanation": "左 (ひだり) is the kanji for left."
+        },
+        {
+          "id": "v12",
+          "type": "orthography",
+          "question": "毎日【でんしゃ】で会社に行きます。",
+          "options": [
+            "車",
+            "自転車",
+            "電車",
+            "電話"
+          ],
+          "correctAnswer": 2,
+          "explanation": "電車 (でんしゃ) is the kanji for train."
+        },
+        {
+          "id": "v13",
+          "type": "orthography",
+          "question": "【いま】何時ですか。",
+          "options": [
+            "今日",
+            "今",
+            "時計",
+            "時間"
+          ],
+          "correctAnswer": 1,
+          "explanation": "今 (いま) is the kanji for now."
+        },
+        {
+          "id": "v14",
+          "type": "context",
+          "question": "カメラで（　　）を撮ります。",
+          "options": [
+            "え",
+            "しゃしん",
+            "ビデオ",
+            "ラジオ"
+          ],
+          "correctAnswer": 1,
+          "explanation": "You take a photo (しゃしん) with a camera."
+        },
+        {
+          "id": "v15",
+          "type": "context",
+          "question": "夜寝る前に、「（　　）」と言います。",
+          "options": [
+            "おはようございます",
+            "こんにちは",
+            "おやすみなさい",
+            "いただきます"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Before sleeping, you say 'おやすみなさい' (Good night)."
+        },
+        {
+          "id": "v16",
+          "type": "context",
+          "question": "私は日本の（　　）が好きです。とくにすしがおいしいです。",
+          "options": [
+            "たべもの",
+            "のみもの",
+            "スポーツ",
+            "えいが"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Sushi is food (たべもの)."
+        },
+        {
+          "id": "v17",
+          "type": "context",
+          "question": "このカメラは（　　）ですから、買いません。",
+          "options": [
+            "やすい",
+            "たかい",
+            "あたらしい",
+            "ふるい"
+          ],
+          "correctAnswer": 1,
+          "explanation": "If you aren't buying it because of a quality, it's likely because it is expensive (たかい)."
+        },
+        {
+          "id": "v18",
+          "type": "context",
+          "question": "かぜを（　　）から、病院へ行きます。",
+          "options": [
+            "ひいた",
+            "した",
+            "なった",
+            "きた"
+          ],
+          "correctAnswer": 0,
+          "explanation": "To catch a cold is かぜをひく."
+        },
+        {
+          "id": "v19",
+          "type": "context",
+          "question": "朝、パンと（　　）を食べます。",
+          "options": [
+            "ぎゅうにゅう",
+            "コーヒー",
+            "たまご",
+            "ジュース"
+          ],
+          "correctAnswer": 2,
+          "explanation": "You eat (食べる) an egg (たまご), whereas you drink milk, coffee, and juice."
+        },
+        {
+          "id": "v20",
+          "type": "context",
+          "question": "テーブルの上に本が３（　　）あります。",
+          "options": [
+            "さつ",
+            "ほん",
+            "まい",
+            "こ"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Books are counted with 〜冊 (さつ)."
+        },
+        {
+          "id": "v21",
+          "type": "context",
+          "question": "今日はとても（　　）ですね。プールで泳ぎたいです。",
+          "options": [
+            "さむい",
+            "あつい",
+            "すずしい",
+            "あたたかい"
+          ],
+          "correctAnswer": 1,
+          "explanation": "You want to swim in a pool when it's hot (あつい)."
+        },
+        {
+          "id": "v22",
+          "type": "context",
+          "question": "えんぴつで（　　）を書いてください。",
+          "options": [
+            "なまえ",
+            "ほん",
+            "じしょ",
+            "かみ"
+          ],
+          "correctAnswer": 0,
+          "explanation": "You write your name (なまえ) with a pencil."
+        },
+        {
+          "id": "v23",
+          "type": "context",
+          "question": "（　　）をさして、外に出ます。",
+          "options": [
+            "ぼうし",
+            "めがね",
+            "かさ",
+            "くつ"
+          ],
+          "correctAnswer": 2,
+          "explanation": "You open an umbrella (かさをさす)."
+        },
+        {
+          "id": "v24",
+          "type": "paraphrase",
+          "question": "山田さんは【先生】です。",
+          "options": [
+            "山田さんは学校で勉強します。",
+            "山田さんは学校で教えます。",
+            "山田さんは会社ではたらきます。",
+            "山田さんは病院で働きます。"
+          ],
+          "correctAnswer": 1,
+          "explanation": "A teacher (先生) teaches (教えます) at a school."
+        },
+        {
+          "id": "v25",
+          "type": "paraphrase",
+          "question": "私の部屋は【とても狭い】です。",
+          "options": [
+            "私の部屋は広くないです。",
+            "私の部屋は広いです。",
+            "私の部屋は明るくないです。",
+            "私の部屋は明るいです。"
+          ],
+          "correctAnswer": 0,
+          "explanation": "If a room is narrow/small (狭い), it is not wide (広くない)."
+        },
+        {
+          "id": "v26",
+          "type": "paraphrase",
+          "question": "図書館で【本を借りました】。",
+          "options": [
+            "本を返しました。",
+            "本を読みました。",
+            "本をもらいました。",
+            "図書館の本を家に持っていきました。"
+          ],
+          "correctAnswer": 3,
+          "explanation": "To borrow a book (本を借りる) means taking a library book home."
+        },
+        {
+          "id": "v27",
+          "type": "paraphrase",
+          "question": "このりくつは【やさしい】です。",
+          "options": [
+            "このもんだいはむずかしいです。",
+            "このもんだいはむずかしくないです。",
+            "このもんだいはおおきいです。",
+            "このもんだいはちいさいです。"
+          ],
+          "correctAnswer": 1,
+          "explanation": "やさしい (easy) means not difficult (むずかしくない)."
+        },
+        {
+          "id": "v28",
+          "type": "paraphrase",
+          "question": "【おととい】、東京へ行きました。",
+          "options": [
+            "昨日の前の日、東京へ行きました。",
+            "昨日の次の日、東京へ行きました。",
+            "今日の前の日、東京へ行きました。",
+            "今日の次の日、東京へ行きました。"
+          ],
+          "correctAnswer": 0,
+          "explanation": "おととい means 'the day before yesterday' (昨日の前の日)."
+        },
+        {
+          "id": "v29",
+          "type": "paraphrase",
+          "question": "【おなかがすきました】。",
+          "options": [
+            "何か食べたいです。",
+            "何か飲みたいです。",
+            "休みたいです。",
+            "寝たいです。"
+          ],
+          "correctAnswer": 0,
+          "explanation": "おなかがすく means 'to be hungry', so you want to eat something (何か食べたいです)."
+        },
+        {
+          "id": "v30",
+          "type": "paraphrase",
+          "question": "あしたは【ひま】です。",
+          "options": [
+            "あしたはいそがしいです。",
+            "あしたは時間がありません。",
+            "あしたはいそがしくないです。",
+            "あしたは休みじゃありません。"
+          ],
+          "correctAnswer": 2,
+          "explanation": "ひま (free time) means not busy (いそがしくない)."
+        }
+      ]
+    },
+    "grammar": {
+      "timeLimit": 25,
+      "questions": [
+        {
+          "id": "g1",
+          "type": "grammar-fill",
+          "question": "私はペン（　　）手紙を書きます。",
+          "options": [
+            "に",
+            "で",
+            "を",
+            "が"
+          ],
+          "correctAnswer": 1,
+          "explanation": "The particle 'で' indicates the means/tool used (with a pen)."
+        },
+        {
+          "id": "g2",
+          "type": "grammar-fill",
+          "question": "スーパーでパン（　　）買いました。",
+          "options": [
+            "が",
+            "を",
+            "に",
+            "で"
+          ],
+          "correctAnswer": 1,
+          "explanation": "The particle 'を' marks the direct object (bought bread)."
+        },
+        {
+          "id": "g3",
+          "type": "grammar-fill",
+          "question": "今日は（　　）さむくないです。",
+          "options": [
+            "とても",
+            "あまり",
+            "たくさん",
+            "すこし"
+          ],
+          "correctAnswer": 1,
+          "explanation": "あまり is used with a negative form to mean 'not very'."
+        },
+        {
+          "id": "g4",
+          "type": "grammar-fill",
+          "question": "机の上に本が５（　　）あります。",
+          "options": [
+            "さつ",
+            "まい",
+            "こ",
+            "だい"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Books are counted with 〜冊 (さつ)."
+        },
+        {
+          "id": "g5",
+          "type": "grammar-fill",
+          "question": "あの人は日本人（　　）ありません。",
+          "options": [
+            "で",
+            "じゃ",
+            "に",
+            "を"
+          ],
+          "correctAnswer": 1,
+          "explanation": "じゃありません is the negative form for nouns."
+        },
+        {
+          "id": "g6",
+          "type": "grammar-fill",
+          "question": "あした、私の家へ遊びに（　　）。",
+          "options": [
+            "来ますか",
+            "来ませんか",
+            "来ましたか",
+            "来ました"
+          ],
+          "correctAnswer": 1,
+          "explanation": "'〜ませんか' is used to make an invitation (Won't you come to play?)."
+        },
+        {
+          "id": "g7",
+          "type": "grammar-fill",
+          "question": "どうぞ、たくさん（　　）ください。",
+          "options": [
+            "食べて",
+            "食べる",
+            "食べた",
+            "食べない"
+          ],
+          "correctAnswer": 0,
+          "explanation": "'〜てください' (please do...) requires the te-form of the verb (食べて)."
+        },
+        {
+          "id": "g8",
+          "type": "grammar-fill",
+          "question": "いま、音楽を（　　）います。",
+          "options": [
+            "聞いて",
+            "聞く",
+            "聞き",
+            "聞いた"
+          ],
+          "correctAnswer": 0,
+          "explanation": "'〜ています' indicates an ongoing action, requiring the te-form (聞いて)."
+        },
+        {
+          "id": "g9",
+          "type": "grammar-fill",
+          "question": "私は歌を（　　）が下手です。",
+          "options": [
+            "歌う",
+            "歌います",
+            "歌って",
+            "歌うの"
+          ],
+          "correctAnswer": 3,
+          "explanation": "To make a verb phrase into a noun, add 'の' (歌うの = singing)."
+        },
+        {
+          "id": "g10",
+          "type": "grammar-fill",
+          "question": "昨日は（　　）です。",
+          "options": [
+            "いい天気",
+            "いい天気じゃありません",
+            "いい天気でした",
+            "いい天気じゃありませんでした"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Describing a past state requires the past tense 'でした'."
+        },
+        {
+          "id": "g11",
+          "type": "grammar-fill",
+          "question": "次の文の ★ に入る最もよいものを一つ選びなさい。\n私 ___ ___ ★ ___ 行きます。",
+          "options": [
+            "は",
+            "へ",
+            "日本",
+            "来月"
+          ],
+          "correctAnswer": 1,
+          "explanation": "The correct order is: 私は来月日本へ行きます。 The star is 'へ'."
+        },
+        {
+          "id": "g12",
+          "type": "grammar-fill",
+          "question": "いぬの ___ ___ ★ ___ あります。",
+          "options": [
+            "の",
+            "前",
+            "に",
+            "猫が"
+          ],
+          "correctAnswer": 2,
+          "explanation": "The correct order is: いぬの前に猫がいます。 The star is 'に'."
+        },
+        {
+          "id": "g13",
+          "type": "grammar-fill",
+          "question": "だれ ___ ___ ★ ___ いません。",
+          "options": [
+            "部屋",
+            "の",
+            "に",
+            "も"
+          ],
+          "correctAnswer": 3,
+          "explanation": "The correct order is: 部屋の中にだれもいません。 The star is 'も'."
+        },
+        {
+          "id": "g14",
+          "type": "grammar-fill",
+          "question": "あした ___ ___ ★ ___ ですか。",
+          "options": [
+            "テスト",
+            "は",
+            "何時",
+            "から"
+          ],
+          "correctAnswer": 3,
+          "explanation": "The correct order is: あしたのテストは何時からですか (No, 'の' is missing). あした テスト は 何時 から ですか。 The star is 'から'."
+        },
+        {
+          "id": "g15",
+          "type": "grammar-fill",
+          "question": "駅 ___ ___ ★ ___ 行きます。",
+          "options": [
+            "まで",
+            "で",
+            "タクシー",
+            "は"
+          ],
+          "correctAnswer": 1,
+          "explanation": "The correct order is: 駅まではタクシーで行きます。 The star is 'で'."
+        },
+        {
+          "id": "g16",
+          "type": "grammar-fill",
+          "question": "文章を読んで、（１）に入る言葉を選びなさい。\n私は（１）日本の会社で働いています。",
+          "options": [
+            "いま",
+            "きのう",
+            "あした",
+            "さっき"
+          ],
+          "correctAnswer": 0,
+          "explanation": "The sentence is in the present continuous tense (働いています), so 'いま' (now) is correct."
+        },
+        {
+          "id": "g17",
+          "type": "grammar-fill",
+          "question": "（２）に入る言葉を選びなさい。\n毎朝６時半（２）起きます。",
+          "options": [
+            "に",
+            "で",
+            "を",
+            "へ"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Specific times take the particle 'に'."
+        },
+        {
+          "id": "g18",
+          "type": "grammar-fill",
+          "question": "（３）に入る言葉を選びなさい。\n朝ごはんは（３）パンとコーヒーです。",
+          "options": [
+            "たいてい",
+            "ぜんぜん",
+            "あまり",
+            "とても"
+          ],
+          "correctAnswer": 0,
+          "explanation": "'たいてい' (usually) fits the context of a daily routine."
+        },
+        {
+          "id": "g19",
+          "type": "grammar-fill",
+          "question": "（４）に入る言葉を選びなさい。\n会社は９時から（４）。",
+          "options": [
+            "です",
+            "あります",
+            "います",
+            "します"
+          ],
+          "correctAnswer": 0,
+          "explanation": "To express the time a place/event starts, '〜からです' is used."
+        },
+        {
+          "id": "g20",
+          "type": "grammar-fill",
+          "question": "（５）に入る言葉を選びなさい。\n仕事はとても（５）。",
+          "options": [
+            "いそがしいです",
+            "いそがしかった",
+            "いそがしくないです",
+            "いそがしくなかった"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Describing a current state in a daily routine requires the present tense affirmative 'いそがしいです'."
+        },
+        {
+          "id": "g21",
+          "type": "grammar-fill",
+          "question": "（６）に入る言葉を選びなさい。\nでも、（６）おもしろいです。",
+          "options": [
+            "とても",
+            "あまり",
+            "ぜんぜん",
+            "たくさん"
+          ],
+          "correctAnswer": 0,
+          "explanation": "'とても' (very) is used to modify the affirmative adjective 'おもしろい'."
+        },
+        {
+          "id": "g22",
+          "type": "grammar-fill",
+          "question": "（７）に入る言葉を選びなさい。\n夜は遅く家に（７）。",
+          "options": [
+            "帰ります",
+            "帰りました",
+            "帰って",
+            "帰る"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Describing a daily routine requires the present tense (帰ります)."
+        },
+        {
+          "id": "g23",
+          "type": "grammar-fill",
+          "question": "（８）に入る言葉を選びなさい。\n休みの日は何（８）しません。",
+          "options": [
+            "も",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": 0,
+          "explanation": "'何も' (nothing) is used with a negative verb (しません)."
+        }
+      ]
+    },
+    "reading": {
+      "timeLimit": 50,
+      "passages": [
+        {
+          "id": "p1",
+          "text": "私の家族は4人です。父と母と姉と私です。父は会社員です。車で会社へ行きます。母は家でピアノを教えています。姉は大学生です。私は高校生です。",
+          "questions": [
+            {
+              "id": "r1",
+              "type": "reading-comprehension",
+              "question": "この人の家には何人家族がいますか。",
+              "options": [
+                "3人",
+                "4人",
+                "5人",
+                "6人"
+              ],
+              "correctAnswer": 1,
+              "explanation": "The text says '私の家族は4人です' (My family has 4 people)."
+            },
+            {
+              "id": "r2",
+              "type": "reading-comprehension",
+              "question": "お母さんの仕事は何ですか。",
+              "options": [
+                "会社員",
+                "ピアノの先生",
+                "大学生",
+                "高校生"
+              ],
+              "correctAnswer": 1,
+              "explanation": "The text says '母は家でピアノを教えています' (My mother teaches piano at home)."
+            }
+          ]
+        },
+        {
+          "id": "p2",
+          "text": "今日は日曜日です。天気がいいですから、公園へ散歩に行きます。公園には花がたくさんあります。とてもきれいです。時々、友達と一緒に公園でテニスをします。でも、今日は一人です。",
+          "questions": [
+            {
+              "id": "r3",
+              "type": "reading-comprehension",
+              "question": "今日はだれと公園へ行きますか。",
+              "options": [
+                "友達と",
+                "一人で",
+                "家族と",
+                "だれも行きません"
+              ],
+              "correctAnswer": 1,
+              "explanation": "The text explicitly says 'でも、今日は一人です' (But today, I am alone)."
+            },
+            {
+              "id": "r4",
+              "type": "reading-comprehension",
+              "question": "公園はどうですか。",
+              "options": [
+                "きれいじゃありません",
+                "花が少しあります",
+                "花がたくさんあってきれいです",
+                "天気が悪いです"
+              ],
+              "correctAnswer": 2,
+              "explanation": "The text says '公園には花がたくさんあります。とてもきれいです' (There are many flowers in the park. It is very beautiful)."
+            }
+          ]
+        },
+        {
+          "id": "p3",
+          "text": "【レストランからのお知らせ】\nこのレストランは午前11時から午後10時までです。休みは火曜日です。お昼の時間は12時から午後2時までです。お昼の時間はコーヒーが安いです。ぜひ来てください。",
+          "questions": [
+            {
+              "id": "r5",
+              "type": "reading-comprehension",
+              "question": "このレストランは何時に終わりますか。",
+              "options": [
+                "午前11時",
+                "午後2時",
+                "午後10時",
+                "午後12時"
+              ],
+              "correctAnswer": 2,
+              "explanation": "The text says '午後10時までです' (Until 10 PM)."
+            },
+            {
+              "id": "r6",
+              "type": "reading-comprehension",
+              "question": "レストランはいつ休みですか。",
+              "options": [
+                "月曜日",
+                "火曜日",
+                "水曜日",
+                "日曜日"
+              ],
+              "correctAnswer": 1,
+              "explanation": "The text says '休みは火曜日です' (The day off is Tuesday)."
+            },
+            {
+              "id": "r7",
+              "type": "reading-comprehension",
+              "question": "いつコーヒーが安いですか。",
+              "options": [
+                "午前11時から",
+                "午後2時から",
+                "火曜日に",
+                "お昼の時間に"
+              ],
+              "correctAnswer": 3,
+              "explanation": "The text says 'お昼の時間はコーヒーが安いです' (During lunch time, coffee is cheap)."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

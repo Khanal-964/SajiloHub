@@ -1,0 +1,872 @@
+{
+  "id": "n1-test-5",
+  "level": "N1",
+  "title": "JLPT N1 Practice Test 5",
+  "sections": {
+    "vocabulary": {
+      "timeLimit": 35,
+      "questions": [
+        {
+          "id": "v1",
+          "type": "kanji-reading",
+          "question": "彼の意見に【賛同】する。",
+          "options": [
+            "さんどう",
+            "ざんどう",
+            "さんとう",
+            "ざんとう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "賛同 (さんどう) means 'approval / agreement'."
+        },
+        {
+          "id": "v2",
+          "type": "kanji-reading",
+          "question": "利益を【享受】する。",
+          "options": [
+            "きょうじゅ",
+            "ぎょうじゅ",
+            "きょうしゅ",
+            "ぎょうしゅ"
+          ],
+          "correctAnswer": 0,
+          "explanation": "享受 (きょうじゅ) means 'reception / enjoyment (of benefits)'."
+        },
+        {
+          "id": "v3",
+          "type": "kanji-reading",
+          "question": "古い慣習から【脱却】する。",
+          "options": [
+            "だっきゃく",
+            "だっかく",
+            "たっきゃく",
+            "たっかく"
+          ],
+          "correctAnswer": 0,
+          "explanation": "脱却 (だっきゃく) means 'breaking away from / freeing oneself from'."
+        },
+        {
+          "id": "v4",
+          "type": "kanji-reading",
+          "question": "【膨大】な資料を整理する。",
+          "options": [
+            "ぼうだい",
+            "ほうだい",
+            "ぼうたい",
+            "ほうたい"
+          ],
+          "correctAnswer": 0,
+          "explanation": "膨大 (ぼうだい) means 'enormous / vast'."
+        },
+        {
+          "id": "v5",
+          "type": "kanji-reading",
+          "question": "【漠然】とした不安を抱く。",
+          "options": [
+            "ばくぜん",
+            "ばくねん",
+            "まくぜん",
+            "まくねん"
+          ],
+          "correctAnswer": 0,
+          "explanation": "漠然 (ばくぜん) means 'vague / obscure'."
+        },
+        {
+          "id": "v6",
+          "type": "kanji-reading",
+          "question": "【迅速】な対応が求められる。",
+          "options": [
+            "じんそく",
+            "じんぞく",
+            "しんそく",
+            "しんぞく"
+          ],
+          "correctAnswer": 0,
+          "explanation": "迅速 (じんそく) means 'swift / prompt'."
+        },
+        {
+          "id": "v7",
+          "type": "kanji-reading",
+          "question": "事実を【歪曲】して伝える。",
+          "options": [
+            "わいきょく",
+            "わいかく",
+            "ゆいきょく",
+            "ゆいかく"
+          ],
+          "correctAnswer": 0,
+          "explanation": "歪曲 (わいきょく) means 'distortion / falsification'."
+        },
+        {
+          "id": "v8",
+          "type": "kanji-reading",
+          "question": "法案が【可決】された。",
+          "options": [
+            "かけつ",
+            "かけち",
+            "がけつ",
+            "がけち"
+          ],
+          "correctAnswer": 0,
+          "explanation": "可決 (かけつ) means 'approval / adoption'."
+        },
+        {
+          "id": "v9",
+          "type": "kanji-reading",
+          "question": "【巧み】な話術で客を惹きつける。",
+          "options": [
+            "たくみ",
+            "たくに",
+            "こうみ",
+            "ごうみ"
+          ],
+          "correctAnswer": 0,
+          "explanation": "巧み (たくみ) means 'skillful / clever'."
+        },
+        {
+          "id": "v10",
+          "type": "kanji-reading",
+          "question": "【厳格】な審査が行われる。",
+          "options": [
+            "げんかく",
+            "げんがく",
+            "けんかく",
+            "けんがく"
+          ],
+          "correctAnswer": 0,
+          "explanation": "厳格 (げんかく) means 'strict / severe'."
+        },
+        {
+          "id": "v11",
+          "type": "orthography",
+          "question": "【かんげん】すれば、それは失敗だ。",
+          "options": [
+            "換言",
+            "還元",
+            "甘言",
+            "簡言"
+          ],
+          "correctAnswer": 0,
+          "explanation": "換言 (かんげん) is the kanji for 'in other words'."
+        },
+        {
+          "id": "v12",
+          "type": "orthography",
+          "question": "古い建物を【ほしゅう】する。",
+          "options": [
+            "補修",
+            "保守",
+            "保修",
+            "補守"
+          ],
+          "correctAnswer": 0,
+          "explanation": "補修 (ほしゅう) is the kanji for repair."
+        },
+        {
+          "id": "v13",
+          "type": "orthography",
+          "question": "【はいき】物を処理する。",
+          "options": [
+            "廃棄",
+            "排棄",
+            "廃機",
+            "排機"
+          ],
+          "correctAnswer": 0,
+          "explanation": "廃棄 (はいき) is the kanji for disposal."
+        },
+        {
+          "id": "v14",
+          "type": "orthography",
+          "question": "【ひきょう】な手段を使う。",
+          "options": [
+            "卑怯",
+            "非境",
+            "飛境",
+            "秘強"
+          ],
+          "correctAnswer": 0,
+          "explanation": "卑怯 (ひきょう) is the kanji for cowardly/unfair."
+        },
+        {
+          "id": "v15",
+          "type": "orthography",
+          "question": "前例を【とうしゅう】する。",
+          "options": [
+            "踏襲",
+            "塔襲",
+            "踏衆",
+            "塔衆"
+          ],
+          "correctAnswer": 0,
+          "explanation": "踏襲 (とうしゅう) is the kanji for following a precedent."
+        },
+        {
+          "id": "v16",
+          "type": "orthography",
+          "question": "問題が【ふんきゅう】する。",
+          "options": [
+            "紛糾",
+            "粉糾",
+            "紛給",
+            "粉給"
+          ],
+          "correctAnswer": 0,
+          "explanation": "紛糾 (ふんきゅう) is the kanji for complication."
+        },
+        {
+          "id": "v17",
+          "type": "orthography",
+          "question": "【せんさい】な神経の持ち主だ。",
+          "options": [
+            "繊細",
+            "洗細",
+            "先細",
+            "千細"
+          ],
+          "correctAnswer": 0,
+          "explanation": "繊細 (せんさい) is the kanji for delicate/sensitive."
+        },
+        {
+          "id": "v18",
+          "type": "context",
+          "question": "あの件については、彼に（　　）を刺しておいた。",
+          "options": [
+            "釘",
+            "針",
+            "棘",
+            "槍"
+          ],
+          "correctAnswer": 0,
+          "explanation": "釘を刺す (くぎをさす) means 'to give a warning / make sure'."
+        },
+        {
+          "id": "v19",
+          "type": "context",
+          "question": "彼は（　　）を尽くして患者を治療した。",
+          "options": [
+            "手",
+            "足",
+            "気",
+            "心"
+          ],
+          "correctAnswer": 0,
+          "explanation": "手を尽くす (てをつくす) means 'to try all possible means'."
+        },
+        {
+          "id": "v20",
+          "type": "context",
+          "question": "彼の意見は（　　）を得ている。",
+          "options": [
+            "的",
+            "芯",
+            "核",
+            "真"
+          ],
+          "correctAnswer": 0,
+          "explanation": "的を得る (まとをえる) means 'to hit the mark / be to the point'."
+        },
+        {
+          "id": "v21",
+          "type": "context",
+          "question": "（　　）な事情により、本日の公演は中止となります。",
+          "options": [
+            "やむを得ない",
+            "しかたのない",
+            "どうしようもない",
+            "しょうがない"
+          ],
+          "correctAnswer": 0,
+          "explanation": "やむを得ない (やむをえない) is the formal expression for 'unavoidable'."
+        },
+        {
+          "id": "v22",
+          "type": "context",
+          "question": "彼は（　　）の辞令を受けた。",
+          "options": [
+            "青天の霹靂",
+            "寝耳に水",
+            "馬耳東風",
+            "一石二鳥"
+          ],
+          "correctAnswer": 0,
+          "explanation": "青天の霹靂 (せいてんのへきれき) means 'a bolt from the blue'."
+        },
+        {
+          "id": "v23",
+          "type": "context",
+          "question": "景気が（　　）し、企業の倒産が相次いだ。",
+          "options": [
+            "低迷",
+            "迷路",
+            "混迷",
+            "迷信"
+          ],
+          "correctAnswer": 0,
+          "explanation": "低迷 (ていめい) means 'sluggishness / stagnation'."
+        },
+        {
+          "id": "v24",
+          "type": "context",
+          "question": "社長の（　　）の一声で決定した。",
+          "options": [
+            "鶴",
+            "亀",
+            "犬",
+            "猫"
+          ],
+          "correctAnswer": 0,
+          "explanation": "鶴の一声 (つるのひとこえ) means 'the voice of authority'."
+        },
+        {
+          "id": "v25",
+          "type": "context",
+          "question": "彼は約束を（　　）破る。",
+          "options": [
+            "平気で",
+            "無事で",
+            "安全で",
+            "当然で"
+          ],
+          "correctAnswer": 0,
+          "explanation": "平気で (へいきで) means 'without hesitation / coolly'."
+        },
+        {
+          "id": "v26",
+          "type": "context",
+          "question": "事件の（　　）が明らかになった。",
+          "options": [
+            "真相",
+            "真実",
+            "本音",
+            "本当"
+          ],
+          "correctAnswer": 0,
+          "explanation": "真相 (しんそう) means 'the truth (of a case)'."
+        },
+        {
+          "id": "v27",
+          "type": "context",
+          "question": "彼女のピアノの演奏は（　　）である。",
+          "options": [
+            "絶妙",
+            "奇妙",
+            "微妙",
+            "巧妙"
+          ],
+          "correctAnswer": 0,
+          "explanation": "絶妙 (ぜつみょう) means 'exquisite / superb'."
+        },
+        {
+          "id": "v28",
+          "type": "context",
+          "question": "このシステムは（　　）的に問題がある。",
+          "options": [
+            "根本",
+            "基本",
+            "元本",
+            "根元"
+          ],
+          "correctAnswer": 0,
+          "explanation": "根本的 (こんぽんてき) means 'fundamentally'."
+        },
+        {
+          "id": "v29",
+          "type": "context",
+          "question": "彼は（　　）と嘘をつく。",
+          "options": [
+            "しゃあしゃあ",
+            "すらすら",
+            "ぺらぺら",
+            "つらつら"
+          ],
+          "correctAnswer": 0,
+          "explanation": "しゃあしゃあと means 'shamelessly / brazenly'."
+        },
+        {
+          "id": "v30",
+          "type": "paraphrase",
+          "question": "あの件は【うやむや】になった。",
+          "options": [
+            "曖昧なままになった",
+            "きれいに解決した",
+            "大きな話題になった",
+            "裁判になった"
+          ],
+          "correctAnswer": 0,
+          "explanation": "有耶無耶 (うやむや) means 'vague / unsettled'."
+        },
+        {
+          "id": "v31",
+          "type": "paraphrase",
+          "question": "彼は【無性に】甘いものが食べたくなる。",
+          "options": [
+            "わけもなくむやみに",
+            "たまに少しだけ",
+            "健康のために",
+            "毎日必ず"
+          ],
+          "correctAnswer": 0,
+          "explanation": "無性に (むしょうに) means 'irresistibly'."
+        },
+        {
+          "id": "v32",
+          "type": "paraphrase",
+          "question": "彼の説明は【まわりくどい】。",
+          "options": [
+            "遠回しで分かりにくい",
+            "直接的で分かりやすい",
+            "短くて丁寧だ",
+            "長くて親切だ"
+          ],
+          "correctAnswer": 0,
+          "explanation": "まわりくどい means 'roundabout' (遠回しで分かりにくい)."
+        },
+        {
+          "id": "v33",
+          "type": "paraphrase",
+          "question": "事態は【切迫】している。",
+          "options": [
+            "非常に差し迫っている",
+            "徐々に良くなっている",
+            "全く変わっていない",
+            "ゆっくり進んでいる"
+          ],
+          "correctAnswer": 0,
+          "explanation": "切迫 (せっぱく) means 'urgent / impending'."
+        },
+        {
+          "id": "v34",
+          "type": "paraphrase",
+          "question": "あの人は【おっかない】。",
+          "options": [
+            "恐ろしい",
+            "面白い",
+            "優しい",
+            "賢い"
+          ],
+          "correctAnswer": 0,
+          "explanation": "おっかない means 'scary / frightening'."
+        },
+        {
+          "id": "v35",
+          "type": "paraphrase",
+          "question": "彼は【かたくなに】拒否した。",
+          "options": [
+            "強硬に",
+            "柔らかく",
+            "曖昧に",
+            "悲しそうに"
+          ],
+          "correctAnswer": 0,
+          "explanation": "かたくなに means 'stubbornly' (強硬に)."
+        },
+        {
+          "id": "v36",
+          "type": "paraphrase",
+          "question": "【案の定】失敗した。",
+          "options": [
+            "予想通り",
+            "予想外に",
+            "突然",
+            "偶然"
+          ],
+          "correctAnswer": 0,
+          "explanation": "案の定 (あんのじょう) means 'as expected'."
+        },
+        {
+          "id": "v37",
+          "type": "paraphrase",
+          "question": "彼女は【おおまか】に説明した。",
+          "options": [
+            "ざっと",
+            "詳しく",
+            "丁寧に",
+            "ゆっくり"
+          ],
+          "correctAnswer": 0,
+          "explanation": "大まか (おおまか) means 'rough / broad' (ざっと)."
+        },
+        {
+          "id": "v38",
+          "type": "paraphrase",
+          "question": "この計画は【もろい】。",
+          "options": [
+            "崩れやすい",
+            "完璧だ",
+            "時間がかかる",
+            "お金がかかる"
+          ],
+          "correctAnswer": 0,
+          "explanation": "脆い (もろい) means 'fragile' (崩れやすい)."
+        },
+        {
+          "id": "v39",
+          "type": "paraphrase",
+          "question": "彼は【とっさに】嘘をついた。",
+          "options": [
+            "反射的に",
+            "計画的に",
+            "わざと",
+            "ゆっくりと"
+          ],
+          "correctAnswer": 0,
+          "explanation": "咄嗟に (とっさに) means 'promptly / reflexively' (反射的に)."
+        }
+      ]
+    },
+    "grammar": {
+      "timeLimit": 30,
+      "questions": [
+        {
+          "id": "g1",
+          "type": "grammar-fill",
+          "question": "彼は謝る（　　）、逆に怒り出した。",
+          "options": [
+            "どころか",
+            "ばかりか",
+            "かわりに",
+            "うえに"
+          ],
+          "correctAnswer": 0,
+          "explanation": "〜どころか (far from / not only not... but)."
+        },
+        {
+          "id": "g2",
+          "type": "grammar-fill",
+          "question": "社長の決定と（　　）、従わざるを得ない。",
+          "options": [
+            "あっては",
+            "あれば",
+            "あるなら",
+            "あっても"
+          ],
+          "correctAnswer": 0,
+          "explanation": "〜とあっては (under the special condition of)."
+        },
+        {
+          "id": "g3",
+          "type": "grammar-fill",
+          "question": "彼は仕事の（　　）、ボランティア活動もしている。",
+          "options": [
+            "かたわら",
+            "ついでに",
+            "がてら",
+            "かわりに"
+          ],
+          "correctAnswer": 0,
+          "explanation": "〜かたわら (while doing [main job], also doing...)."
+        },
+        {
+          "id": "g4",
+          "type": "grammar-fill",
+          "question": "散歩（　　）、スーパーに寄って買い物をした。",
+          "options": [
+            "がてら",
+            "かたわら",
+            "ついでに",
+            "かわりに"
+          ],
+          "correctAnswer": 0,
+          "explanation": "〜がてら (on the same occasion / while at it)."
+        },
+        {
+          "id": "g5",
+          "type": "grammar-fill",
+          "question": "この小説は、実話（　　）書かれている。",
+          "options": [
+            "に基づいて",
+            "にそって",
+            "にこたえて",
+            "にしたがって"
+          ],
+          "correctAnswer": 0,
+          "explanation": "〜に基づいて (based on)."
+        },
+        {
+          "id": "g6",
+          "type": "grammar-fill",
+          "question": "資金不足のため、計画の変更（　　）。",
+          "options": [
+            "を余儀なくされた",
+            "を禁じ得ない",
+            "にほかならない",
+            "にすぎない"
+          ],
+          "correctAnswer": 0,
+          "explanation": "〜を余儀なくされる (to be forced to do)."
+        },
+        {
+          "id": "g7",
+          "type": "grammar-fill",
+          "question": "彼は病気（　　）、毎日酒を飲んでいる。",
+          "options": [
+            "にかこつけて",
+            "にかかわらず",
+            "にともなって",
+            "にひきかえ"
+          ],
+          "correctAnswer": 0,
+          "explanation": "〜にかこつけて (under the pretext of)."
+        },
+        {
+          "id": "g8",
+          "type": "grammar-fill",
+          "question": "あの人の言い方といったら、人を馬鹿にしている（　　）。",
+          "options": [
+            "としか言いようがない",
+            "に限ったことではない",
+            "というものではない",
+            "に越したことはない"
+          ],
+          "correctAnswer": 0,
+          "explanation": "〜としか言いようがない (can only be said that)."
+        },
+        {
+          "id": "g9",
+          "type": "grammar-fill",
+          "question": "合格の知らせを聞いて、彼は今にも泣き出さ（　　）ばかりだった。",
+          "options": [
+            "ん",
+            "ない",
+            "ぬ",
+            "ず"
+          ],
+          "correctAnswer": 0,
+          "explanation": "〜んばかりだ (as if to)."
+        },
+        {
+          "id": "g10",
+          "type": "grammar-fill",
+          "question": "新しいプロジェクトは、異例（　　）のスタートだった。",
+          "options": [
+            "ずくめ",
+            "まみれ",
+            "だらけ",
+            "ぎみ"
+          ],
+          "correctAnswer": 0,
+          "explanation": "〜ずくめ (entirely / completely / unprecedented from start to finish)."
+        },
+        {
+          "id": "g11",
+          "type": "grammar-fill",
+          "question": "この国では、子供から老人（　　）、スマートフォンが普及している。",
+          "options": [
+            "に至るまで",
+            "にかけて",
+            "をはじめ",
+            "を問わず"
+          ],
+          "correctAnswer": 0,
+          "explanation": "〜に至るまで (all the way to)."
+        },
+        {
+          "id": "g12",
+          "type": "grammar-fill",
+          "question": "彼の才能には、驚嘆（　　）。",
+          "options": [
+            "を禁じ得ない",
+            "を余儀なくされる",
+            "にたえない",
+            "にすぎない"
+          ],
+          "correctAnswer": 0,
+          "explanation": "〜を禁じ得ない (cannot help but marvel)."
+        },
+        {
+          "id": "g13",
+          "type": "grammar-fill",
+          "question": "どんな事情がある（　　）、犯罪は許されない。",
+          "options": [
+            "にせよ",
+            "ばかりか",
+            "どころか",
+            "かわり"
+          ],
+          "correctAnswer": 0,
+          "explanation": "〜にせよ (even if / whatever [the circumstances])."
+        },
+        {
+          "id": "g14",
+          "type": "grammar-fill",
+          "question": "次の文の ★ に入る最もよいものを一つ選びなさい。\nその ___ ___ ★ ___ を ___ ざるを得ない。",
+          "options": [
+            "事実",
+            "認め",
+            "は",
+            "証拠を見せられて"
+          ],
+          "correctAnswer": 0,
+          "explanation": "The correct order is: その証拠を見せられては事実を認めざるを得ない。 The star is '事実'."
+        },
+        {
+          "id": "g15",
+          "type": "grammar-fill",
+          "question": "彼 ___ ___ ★ ___ は ___ ないだろう。",
+          "options": [
+            "ほどの",
+            "なら",
+            "失敗",
+            "実力者"
+          ],
+          "correctAnswer": 1,
+          "explanation": "The correct order is: 彼ほどの実力者なら失敗はないだろう。 The star is 'なら'."
+        },
+        {
+          "id": "g16",
+          "type": "grammar-fill",
+          "question": "こんな ___ ___ ★ ___ と ___ 怒りだした。",
+          "options": [
+            "で",
+            "店",
+            "食えるか",
+            "の料理"
+          ],
+          "correctAnswer": 0,
+          "explanation": "The correct order is: こんな店の料理で食えるかと怒りだした。 The star is 'で'."
+        },
+        {
+          "id": "g17",
+          "type": "grammar-fill",
+          "question": "彼 ___ ___ ★ ___ は ___ 考えられない。",
+          "options": [
+            "が",
+            "そんなこと",
+            "を",
+            "するなどと"
+          ],
+          "correctAnswer": 3,
+          "explanation": "The correct order is: 彼がそんなことをするなどとは考えられない。 The star is 'するなどと'."
+        },
+        {
+          "id": "g18",
+          "type": "grammar-fill",
+          "question": "この規則は ___ ___ ★ ___ ては ___ いけない。",
+          "options": [
+            "例え",
+            "であっ",
+            "社長",
+            "も破っ"
+          ],
+          "correctAnswer": 2,
+          "explanation": "The correct order is: この規則は例え社長であっても破ってはいけない。 The star is '社長'."
+        }
+      ]
+    },
+    "reading": {
+      "timeLimit": 45,
+      "passages": [
+        {
+          "id": "p1",
+          "text": "現代社会において「効率化」は至上の命題のように語られる。確かに、無駄を省き、最小の労力で最大の結果を得ることは経済活動の基本である。しかし、人間の生活や文化といった領域にまで、この尺度を無批判に持ち込むことには警鐘を鳴らしたい。一見すると「無駄」に思える寄り道や、非効率な手作業の中にこそ、新しい発想の芽や、人間らしさの源泉が隠されていることが多いからだ。効率性のみを追求した社会は、結果として極めて脆弱で、創造性の乏しいものになる危険性を孕んでいる。",
+          "questions": [
+            {
+              "id": "r1",
+              "type": "reading-comprehension",
+              "question": "筆者は「効率化」についてどのように考えているか。",
+              "options": [
+                "経済活動においては重要だが、生活や文化の領域にまで無批判に持ち込むべきではない。",
+                "経済活動においても生活においても、効率化は絶対に追求すべき至上の命題である。",
+                "効率化は人間の生活において全く無意味であり、すぐにやめるべきだ。",
+                "無駄を省くことは創造性を高めるため、すべての領域で徹底すべきだ。"
+              ],
+              "correctAnswer": 0,
+              "explanation": "The text warns against bringing efficiency metrics uncritically into the realm of human life and culture."
+            },
+            {
+              "id": "r2",
+              "type": "reading-comprehension",
+              "question": "筆者が「無駄」の中に隠されていると考えているものは何か。",
+              "options": [
+                "新しい発想の芽や人間らしさの源泉",
+                "経済的な利益や効率性",
+                "社会を脆弱にする危険性",
+                "最大の結果を生み出す方法"
+              ],
+              "correctAnswer": 0,
+              "explanation": "The text states that new ideas and human essence are hidden in seemingly wasteful detours."
+            }
+          ]
+        },
+        {
+          "id": "p2",
+          "text": "科学技術の発展は、常に倫理的な問題と表裏一体である。例えば、遺伝子操作技術の進歩は、難病治療に光明をもたらす一方で、「デザイナーベビー」のような生命の根幹に関わる倫理的ジレンマを引き起こす。技術そのものには善悪はない。それをどのように使い、どこに限界を設けるのかは、我々人間の道徳的な判断に委ねられている。技術の暴走を防ぐためには、科学者だけでなく、広く一般の市民が議論に参加し、社会全体で技術のあり方を方向づけていく仕組みが不可欠である。",
+          "questions": [
+            {
+              "id": "r3",
+              "type": "reading-comprehension",
+              "question": "遺伝子操作技術について、筆者はどのような立場をとっているか。",
+              "options": [
+                "難病治療への期待と倫理的な問題の両面を持つと考えている。",
+                "倫理的な問題が大きすぎるため、研究を全面的に禁止すべきだと考えている。",
+                "難病治療に役立つため、倫理的な問題は無視しても構わないと考えている。",
+                "技術自体が悪であるため、人間の道徳的判断で排除すべきだと考えている。"
+              ],
+              "correctAnswer": 0,
+              "explanation": "The text shows both the positive (curing diseases) and negative (ethical dilemmas) aspects."
+            },
+            {
+              "id": "r4",
+              "type": "reading-comprehension",
+              "question": "技術の暴走を防ぐために、筆者が必要だと主張しているのはどれか。",
+              "options": [
+                "科学者だけでなく、一般市民も含めた社会全体での議論と方向づけ",
+                "科学者自身の厳しい倫理規定の策定",
+                "政府による強力な法規制と罰則",
+                "技術開発の予算を削減し、発展のスピードを遅らせること"
+              ],
+              "correctAnswer": 0,
+              "explanation": "The text calls for broad public participation in discussions to guide technology."
+            }
+          ]
+        },
+        {
+          "id": "p3",
+          "text": "真のリーダーシップとは、他者を力で支配することではなく、他者の自発的な行動を引き出すことにある。命令や恐怖によって人を動かそうとすれば、一時的には服従させることができるかもしれないが、決して相手の心からの貢献を得ることはできない。リーダーに求められるのは、明確なビジョンを示し、共感を呼び起こし、メンバー一人ひとりが自分の役割に意味を見出せる環境を作り出すことである。それはつまり、権力を行使する能力ではなく、他者をエンパワーする（力を与える）能力に他ならない。",
+          "questions": [
+            {
+              "id": "r5",
+              "type": "reading-comprehension",
+              "question": "筆者によると、真のリーダーシップとはどのようなものか。",
+              "options": [
+                "他者の自発的な行動を引き出すこと",
+                "力で他者を支配すること",
+                "命令や恐怖で人を動かすこと",
+                "誰よりも多く働くこと"
+              ],
+              "correctAnswer": 0,
+              "explanation": "The text explicitly states true leadership is about drawing out spontaneous action from others."
+            },
+            {
+              "id": "r6",
+              "type": "reading-comprehension",
+              "question": "命令や恐怖によって人を動かすことの問題点は何か。",
+              "options": [
+                "一時的な服従は得られても、心からの貢献は得られないこと",
+                "すぐに反乱が起きてしまうこと",
+                "時間がかかりすぎること",
+                "リーダー自身が疲労してしまうこと"
+              ],
+              "correctAnswer": 0,
+              "explanation": "The text points out that fear only achieves temporary submission, not heartfelt contribution."
+            },
+            {
+              "id": "r7",
+              "type": "reading-comprehension",
+              "question": "リーダーが作り出すべき環境とは、どのような環境か。",
+              "options": [
+                "メンバー一人ひとりが自分の役割に意味を見出せる環境",
+                "リーダーの命令に全員が絶対服従する環境",
+                "お互いに競争し、蹴落とし合う環境",
+                "全員が同じ意見を持つ均質な環境"
+              ],
+              "correctAnswer": 0,
+              "explanation": "The text says a leader must create an environment where each member finds meaning in their role."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

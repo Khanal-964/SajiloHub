@@ -1,0 +1,820 @@
+{
+  "id": "n5-test-1",
+  "level": "N5",
+  "title": "JLPT N5 Practice Test 1",
+  "sections": {
+    "vocabulary": {
+      "timeLimit": 25,
+      "questions": [
+        {
+          "id": "v1",
+          "type": "kanji-reading",
+          "question": "あしたは【雨】が降ります。",
+          "options": [
+            "ゆき",
+            "くも",
+            "あめ",
+            "はれ"
+          ],
+          "correctAnswer": 2,
+          "explanation": "雨 (あめ) means 'rain'."
+        },
+        {
+          "id": "v2",
+          "type": "kanji-reading",
+          "question": "この【本】はだれのですか。",
+          "options": [
+            "ほん",
+            "ノート",
+            "じしょ",
+            "かみ"
+          ],
+          "correctAnswer": 0,
+          "explanation": "本 (ほん) means 'book'."
+        },
+        {
+          "id": "v3",
+          "type": "kanji-reading",
+          "question": "【南】の空が暗いです。",
+          "options": [
+            "きた",
+            "みなみ",
+            "ひがし",
+            "にし"
+          ],
+          "correctAnswer": 1,
+          "explanation": "南 (みなみ) means 'south'."
+        },
+        {
+          "id": "v4",
+          "type": "kanji-reading",
+          "question": "【車】で学校に行きます。",
+          "options": [
+            "くるま",
+            "でんしゃ",
+            "じてんしゃ",
+            "バス"
+          ],
+          "correctAnswer": 0,
+          "explanation": "車 (くるま) means 'car'."
+        },
+        {
+          "id": "v5",
+          "type": "kanji-reading",
+          "question": "【金曜日】に会いましょう。",
+          "options": [
+            "げつようび",
+            "かようび",
+            "もくようび",
+            "きんようび"
+          ],
+          "correctAnswer": 3,
+          "explanation": "金曜日 (きんようび) means 'Friday'."
+        },
+        {
+          "id": "v6",
+          "type": "kanji-reading",
+          "question": "【私】のなまえは田中です。",
+          "options": [
+            "わたし",
+            "あなた",
+            "かれ",
+            "かのじょ"
+          ],
+          "correctAnswer": 0,
+          "explanation": "私 (わたし) means 'I' or 'me'."
+        },
+        {
+          "id": "v7",
+          "type": "kanji-reading",
+          "question": "とても【大きい】犬ですね。",
+          "options": [
+            "ちいさい",
+            "おおきい",
+            "ながい",
+            "みじかい"
+          ],
+          "correctAnswer": 1,
+          "explanation": "大きい (おおきい) means 'big'."
+        },
+        {
+          "id": "v8",
+          "type": "orthography",
+          "question": "【せんせい】に質問します。",
+          "options": [
+            "学生",
+            "先生",
+            "医者",
+            "会社員"
+          ],
+          "correctAnswer": 1,
+          "explanation": "先生 (せんせい) is the kanji for teacher."
+        },
+        {
+          "id": "v9",
+          "type": "orthography",
+          "question": "【みず】を飲みます。",
+          "options": [
+            "木",
+            "火",
+            "水",
+            "土"
+          ],
+          "correctAnswer": 2,
+          "explanation": "水 (みず) is the kanji for water."
+        },
+        {
+          "id": "v10",
+          "type": "orthography",
+          "question": "【いちまん】えんのシャツを買いました。",
+          "options": [
+            "一千",
+            "一万",
+            "十万",
+            "百"
+          ],
+          "correctAnswer": 1,
+          "explanation": "一万 (いちまん) means ten thousand."
+        },
+        {
+          "id": "v11",
+          "type": "orthography",
+          "question": "【はは】は料理が上手です。",
+          "options": [
+            "父",
+            "母",
+            "兄",
+            "姉"
+          ],
+          "correctAnswer": 1,
+          "explanation": "母 (はは) is the kanji for one's own mother."
+        },
+        {
+          "id": "v12",
+          "type": "orthography",
+          "question": "【みぎ】に曲がってください。",
+          "options": [
+            "左",
+            "右",
+            "上",
+            "下"
+          ],
+          "correctAnswer": 1,
+          "explanation": "右 (みぎ) is the kanji for right."
+        },
+        {
+          "id": "v13",
+          "type": "orthography",
+          "question": "【そら】が青いです。",
+          "options": [
+            "空",
+            "海",
+            "山",
+            "川"
+          ],
+          "correctAnswer": 0,
+          "explanation": "空 (そら) is the kanji for sky."
+        },
+        {
+          "id": "v14",
+          "type": "context",
+          "question": "朝起きて、「（　　）」と言います。",
+          "options": [
+            "こんばんは",
+            "おはようございます",
+            "さようなら",
+            "おやすみなさい"
+          ],
+          "correctAnswer": 1,
+          "explanation": "In the morning, you greet people with 'おはようございます' (Good morning)."
+        },
+        {
+          "id": "v15",
+          "type": "context",
+          "question": "ナイフと（　　）で肉を食べます。",
+          "options": [
+            "スプーン",
+            "フォーク",
+            "おはし",
+            "カップ"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Knives are typically paired with forks (フォーク) when eating meat."
+        },
+        {
+          "id": "v16",
+          "type": "context",
+          "question": "風邪をひいたので、（　　）に行きます。",
+          "options": [
+            "びょういん",
+            "えいがかん",
+            "としょかん",
+            "ぎんこう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "When you catch a cold, you go to the hospital/clinic (びょういん)."
+        },
+        {
+          "id": "v17",
+          "type": "context",
+          "question": "今日は（　　）だから、会社は休みです。",
+          "options": [
+            "げつようび",
+            "かようび",
+            "すいようび",
+            "にちようび"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Sunday (にちようび) is typically a day off from work."
+        },
+        {
+          "id": "v18",
+          "type": "context",
+          "question": "へやが（　　）ですね。電気をつけましょう。",
+          "options": [
+            "あかるい",
+            "くらい",
+            "ひろい",
+            "せまい"
+          ],
+          "correctAnswer": 1,
+          "explanation": "You turn on the light when the room is dark (くらい)."
+        },
+        {
+          "id": "v19",
+          "type": "context",
+          "question": "このコーヒーはとても（　　）です。",
+          "options": [
+            "あまい",
+            "いたい",
+            "あかい",
+            "たかい"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Coffee is often described by its taste, such as sweet (あまい). '高い' (expensive) is possible but '甘い' is a more direct description of the drink itself in this N5 context. Let's assume it has sugar."
+        },
+        {
+          "id": "v20",
+          "type": "context",
+          "question": "かばんの中に（　　）がいくつありますか。",
+          "options": [
+            "りんご",
+            "お茶",
+            "水",
+            "ジュース"
+          ],
+          "correctAnswer": 0,
+          "explanation": "'いくつ' (how many) is used for countable objects like apples (りんご), not liquids."
+        },
+        {
+          "id": "v21",
+          "type": "context",
+          "question": "私は毎朝しんぶんを（　　）。",
+          "options": [
+            "見ます",
+            "読みます",
+            "聞きます",
+            "書きます"
+          ],
+          "correctAnswer": 1,
+          "explanation": "You read (読みます) a newspaper (しんぶん)."
+        },
+        {
+          "id": "v22",
+          "type": "context",
+          "question": "駅までバスで20（　　）かかります。",
+          "options": [
+            "じかん",
+            "ふん",
+            "にち",
+            "かい"
+          ],
+          "correctAnswer": 1,
+          "explanation": "20 minutes is '20分' (にじゅっぷん). 'じかん' would mean 20 hours."
+        },
+        {
+          "id": "v23",
+          "type": "context",
+          "question": "あついですね。（　　）をあけましょうか。",
+          "options": [
+            "ドア",
+            "まど",
+            "テーブル",
+            "テレビ"
+          ],
+          "correctAnswer": 1,
+          "explanation": "When it's hot, you open the window (まど)."
+        },
+        {
+          "id": "v24",
+          "type": "paraphrase",
+          "question": "このくつは【少し小さいです】。",
+          "options": [
+            "このくつは少しおおきいです。",
+            "このくつは少しきついです。",
+            "このくつは少し古いです。",
+            "このくつは少し高いです。"
+          ],
+          "correctAnswer": 1,
+          "explanation": "If shoes are small (小さい), they are tight (きつい)."
+        },
+        {
+          "id": "v25",
+          "type": "paraphrase",
+          "question": "田中さんは【山田さんのおじさん】です。",
+          "options": [
+            "田中さんは山田さんのお父さんの兄弟です。",
+            "田中さんは山田さんのお兄さんです。",
+            "田中さんは山田さんのおじいさんです。",
+            "田中さんは山田さんのいとこです。"
+          ],
+          "correctAnswer": 0,
+          "explanation": "An uncle (おじさん) is the brother of one's parent."
+        },
+        {
+          "id": "v26",
+          "type": "paraphrase",
+          "question": "【ゆうべ】、本を読みました。",
+          "options": [
+            "今日の朝、本を読みました。",
+            "昨日の夜、本を読みました。",
+            "昨日の朝、本を読みました。",
+            "今日の夜、本を読みました。"
+          ],
+          "correctAnswer": 1,
+          "explanation": "ゆうべ means 'last night' (昨日の夜)."
+        },
+        {
+          "id": "v27",
+          "type": "paraphrase",
+          "question": "このカメラは【とても安かった】です。",
+          "options": [
+            "このカメラはあまり高くなかったです。",
+            "このカメラはとても高かったです。",
+            "このカメラはとても新しかったです。",
+            "このカメラはとても古かったです。"
+          ],
+          "correctAnswer": 0,
+          "explanation": "If something was very cheap (安かった), it means it wasn't very expensive (あまり高くなかった)."
+        },
+        {
+          "id": "v28",
+          "type": "paraphrase",
+          "question": "私は【たいてい】6時に起きます。",
+          "options": [
+            "私はいつも6時に起きます。",
+            "私は時々6時に起きます。",
+            "私はだいたい6時に起きます。",
+            "私は全然6時に起きません。"
+          ],
+          "correctAnswer": 2,
+          "explanation": "たいてい means 'mostly' or 'generally', which is closest to だいたい (generally/mostly) or いつも (always). だいたい is a close match for frequency/probability in this N5 context, though 'いつも' is also close. Let's use だいたい."
+        },
+        {
+          "id": "v29",
+          "type": "paraphrase",
+          "question": "鈴木さんは【学生じゃありません】。",
+          "options": [
+            "鈴木さんは先生です。",
+            "鈴木さんは学校にいません。",
+            "鈴木さんは学生ではありません。",
+            "鈴木さんは学生です。"
+          ],
+          "correctAnswer": 2,
+          "explanation": "じゃありません is the conversational form of ではありません."
+        },
+        {
+          "id": "v30",
+          "type": "paraphrase",
+          "question": "【もう一度】言ってください。",
+          "options": [
+            "また言ってください。",
+            "早く言ってください。",
+            "ゆっくり言ってください。",
+            "大きく言ってください。"
+          ],
+          "correctAnswer": 0,
+          "explanation": "もう一度 means 'one more time', which is similar to また (again)."
+        }
+      ]
+    },
+    "grammar": {
+      "timeLimit": 25,
+      "questions": [
+        {
+          "id": "g1",
+          "type": "grammar-fill",
+          "question": "これは私（　　）かばんです。",
+          "options": [
+            "が",
+            "の",
+            "に",
+            "を"
+          ],
+          "correctAnswer": 1,
+          "explanation": "The particle 'の' indicates possession (my bag)."
+        },
+        {
+          "id": "g2",
+          "type": "grammar-fill",
+          "question": "きのうはどこ（　　）行きませんでした。",
+          "options": [
+            "へも",
+            "にも",
+            "をも",
+            "がも"
+          ],
+          "correctAnswer": 0,
+          "explanation": "To say 'nowhere', use question word (どこ) + particle (へ/に) + も with a negative verb."
+        },
+        {
+          "id": "g3",
+          "type": "grammar-fill",
+          "question": "私はりんご（　　）みかんを買いました。",
+          "options": [
+            "と",
+            "や",
+            "が",
+            "の"
+          ],
+          "correctAnswer": 0,
+          "explanation": "The particle 'と' connects two nouns exhaustively (apples and oranges)."
+        },
+        {
+          "id": "g4",
+          "type": "grammar-fill",
+          "question": "このケーキは（　　）おいしいです。",
+          "options": [
+            "とても",
+            "たくさん",
+            "おおぜい",
+            "よく"
+          ],
+          "correctAnswer": 0,
+          "explanation": "'とても' (very) is used to modify adjectives like 'おいしい'."
+        },
+        {
+          "id": "g5",
+          "type": "grammar-fill",
+          "question": "あした、いっしょに映画を（　　）。",
+          "options": [
+            "見ますか",
+            "見ませんか",
+            "見ましょう",
+            "見ます"
+          ],
+          "correctAnswer": 1,
+          "explanation": "'〜ませんか' is used to make an invitation (Won't you watch...?)."
+        },
+        {
+          "id": "g6",
+          "type": "grammar-fill",
+          "question": "あのレストランは安くて（　　）です。",
+          "options": [
+            "おいしい",
+            "おいしくない",
+            "おいしかった",
+            "おいしくなかった"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Connecting positive adjectives: 安くて (cheap and) requires another positive adjective like おいしい."
+        },
+        {
+          "id": "g7",
+          "type": "grammar-fill",
+          "question": "すみませんが、塩を（　　）ください。",
+          "options": [
+            "とって",
+            "とる",
+            "とった",
+            "とらないで"
+          ],
+          "correctAnswer": 0,
+          "explanation": "'〜てください' (please do...) requires the te-form of the verb (とって)."
+        },
+        {
+          "id": "g8",
+          "type": "grammar-fill",
+          "question": "毎日、日本語を勉強（　　）います。",
+          "options": [
+            "して",
+            "する",
+            "し",
+            "した"
+          ],
+          "correctAnswer": 0,
+          "explanation": "'〜ています' indicates an ongoing action or habit, requiring the te-form (して)."
+        },
+        {
+          "id": "g9",
+          "type": "grammar-fill",
+          "question": "私はスポーツを（　　）が好きです。",
+          "options": [
+            "する",
+            "します",
+            "するの",
+            "して"
+          ],
+          "correctAnswer": 2,
+          "explanation": "To make a verb phrase into a noun, add 'の' (するの = doing)."
+        },
+        {
+          "id": "g10",
+          "type": "grammar-fill",
+          "question": "あしたは雨が（　　）でしょう。",
+          "options": [
+            "降る",
+            "降ります",
+            "降って",
+            "降った"
+          ],
+          "correctAnswer": 0,
+          "explanation": "'でしょう' follows the plain form of the verb (降る)."
+        },
+        {
+          "id": "g11",
+          "type": "grammar-fill",
+          "question": "次の文の ★ に入る最もよいものを一つ選びなさい。\n私 ___ ___ ★ ___ 行きます。",
+          "options": [
+            "は",
+            "へ",
+            "デパート",
+            "明日"
+          ],
+          "correctAnswer": 1,
+          "explanation": "The correct order is: 私は明日デパートへ行きます。 The star is 'へ'."
+        },
+        {
+          "id": "g12",
+          "type": "grammar-fill",
+          "question": "テーブルの ___ ___ ★ ___ あります。",
+          "options": [
+            "に",
+            "りんご",
+            "上",
+            "が"
+          ],
+          "correctAnswer": 3,
+          "explanation": "The correct order is: テーブルの上にりんごがあります。 The star is 'が'."
+        },
+        {
+          "id": "g13",
+          "type": "grammar-fill",
+          "question": "あの ___ ___ ★ ___ ですか。",
+          "options": [
+            "だれ",
+            "人",
+            "は",
+            "の"
+          ],
+          "correctAnswer": 2,
+          "explanation": "The correct order is: あの人はだれですか。 The star is 'は'."
+        },
+        {
+          "id": "g14",
+          "type": "grammar-fill",
+          "question": "きのう ___ ___ ★ ___ 読みました。",
+          "options": [
+            "本",
+            "を",
+            "図書館",
+            "で"
+          ],
+          "correctAnswer": 1,
+          "explanation": "The correct order is: きのう図書館で本を読みました。 The star is 'を'."
+        },
+        {
+          "id": "g15",
+          "type": "grammar-fill",
+          "question": "コーヒーを ___ ___ ★ ___ 下さい。",
+          "options": [
+            "もう",
+            "一杯",
+            "飲んで",
+            "少し"
+          ],
+          "correctAnswer": 2,
+          "explanation": "The correct order is: コーヒーを もう 一杯 飲んで 下さい。 The star is '飲んで'."
+        },
+        {
+          "id": "g16",
+          "type": "grammar-fill",
+          "question": "文章を読んで、（１）に入る言葉を選びなさい。\nわたしは田中です。（１）は東京に住んでいます。",
+          "options": [
+            "わたし",
+            "あなた",
+            "かれ",
+            "かのじょ"
+          ],
+          "correctAnswer": 0,
+          "explanation": "The subject continues to be the speaker (わたし)."
+        },
+        {
+          "id": "g17",
+          "type": "grammar-fill",
+          "question": "（２）に入る言葉を選びなさい。\n私の家は駅から近いです。（２）、とても便利です。",
+          "options": [
+            "だから",
+            "しかし",
+            "そして",
+            "でも"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Because it's close, it's convenient. 'だから' (Therefore) is the right conjunction."
+        },
+        {
+          "id": "g18",
+          "type": "grammar-fill",
+          "question": "（３）に入る言葉を選びなさい。\n家の近く（３）スーパーがあります。",
+          "options": [
+            "に",
+            "で",
+            "を",
+            "へ"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Existence is marked by location + に + あります/います."
+        },
+        {
+          "id": "g19",
+          "type": "grammar-fill",
+          "question": "（４）に入る言葉を選びなさい。\n毎日スーパー（４）買い物に行きます。",
+          "options": [
+            "へ",
+            "で",
+            "が",
+            "を"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Direction of movement is marked with 'へ' (or に)."
+        },
+        {
+          "id": "g20",
+          "type": "grammar-fill",
+          "question": "（５）に入る言葉を選びなさい。\n昨日はスーパーで肉（５）野菜を買いました。",
+          "options": [
+            "と",
+            "や",
+            "が",
+            "の"
+          ],
+          "correctAnswer": 0,
+          "explanation": "'と' connects nouns (meat and vegetables)."
+        },
+        {
+          "id": "g21",
+          "type": "grammar-fill",
+          "question": "（６）に入る言葉を選びなさい。\nそのあとで、家で料理を（６）。",
+          "options": [
+            "します",
+            "しました",
+            "して",
+            "する"
+          ],
+          "correctAnswer": 1,
+          "explanation": "The sentence is in the past tense (昨日は), so 'しました' is correct."
+        },
+        {
+          "id": "g22",
+          "type": "grammar-fill",
+          "question": "（７）に入る言葉を選びなさい。\nとても（７）です。",
+          "options": [
+            "おいしかった",
+            "おいしい",
+            "おいしくない",
+            "おいしくなかった"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Describing a past meal, use the past affirmative adjective 'おいしかった'."
+        },
+        {
+          "id": "g23",
+          "type": "grammar-fill",
+          "question": "（８）に入る言葉を選びなさい。\nまた明日も（８）です。",
+          "options": [
+            "作ります",
+            "作りたい",
+            "作った",
+            "作って"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Expressing desire to do it again: '作りたい' (want to make)."
+        }
+      ]
+    },
+    "reading": {
+      "timeLimit": 50,
+      "passages": [
+        {
+          "id": "p1",
+          "text": "私は毎朝7時に起きます。朝ごはんを食べてから、新聞を読みます。8時に家を出ます。会社まで電車で40分かかります。会社は9時から5時までです。",
+          "questions": [
+            {
+              "id": "r1",
+              "type": "reading-comprehension",
+              "question": "この人は朝ごはんを食べてから、何をしますか。",
+              "options": [
+                "起きます",
+                "家を出ます",
+                "新聞を読みます",
+                "会社に行きます"
+              ],
+              "correctAnswer": 2,
+              "explanation": "The text says '朝ごはんを食べてから、新聞を読みます' (After eating breakfast, I read the newspaper)."
+            },
+            {
+              "id": "r2",
+              "type": "reading-comprehension",
+              "question": "この人は何時に会社に着きますか。",
+              "options": [
+                "8時",
+                "8時40分",
+                "9時",
+                "5時"
+              ],
+              "correctAnswer": 1,
+              "explanation": "Leaves house at 8:00, train takes 40 minutes, so arrives at 8:40."
+            }
+          ]
+        },
+        {
+          "id": "p2",
+          "text": "（みさきさんからのメール）\nゆいさん、こんにちは。来週の日曜日、一緒に映画を見に行きませんか。駅の前の映画館で、新しいアニメをやっています。映画のあとで、おいしいケーキを食べに行きましょう。",
+          "questions": [
+            {
+              "id": "r3",
+              "type": "reading-comprehension",
+              "question": "みさきさんはいつ映画を見に行きたいですか。",
+              "options": [
+                "今週の土曜日",
+                "今週の日曜日",
+                "来週の土曜日",
+                "来週の日曜日"
+              ],
+              "correctAnswer": 3,
+              "explanation": "The email explicitly says '来週の日曜日' (Next Sunday)."
+            },
+            {
+              "id": "r4",
+              "type": "reading-comprehension",
+              "question": "映画のあとで、何をしますか。",
+              "options": [
+                "家に帰ります",
+                "ケーキを食べます",
+                "アニメを見ます",
+                "買い物をします"
+              ],
+              "correctAnswer": 1,
+              "explanation": "The text says '映画のあとで、おいしいケーキを食べに行きましょう' (Let's go eat delicious cake after the movie)."
+            }
+          ]
+        },
+        {
+          "id": "p3",
+          "text": "【図書館のルール】\n１．図書館の中では、静かにしてください。\n２．食べ物を食べないでください。飲み物は飲んでもいいです。\n３．本は２週間借りることができます。\n４．休みの日は月曜日です。",
+          "questions": [
+            {
+              "id": "r5",
+              "type": "reading-comprehension",
+              "question": "図書館でしてもいいことはどれですか。",
+              "options": [
+                "大きな声で話すこと",
+                "パンを食べること",
+                "水を飲むこと",
+                "月曜日に本を借りること"
+              ],
+              "correctAnswer": 2,
+              "explanation": "Rule 2 says '飲み物は飲んでもいいです' (You may drink beverages)."
+            },
+            {
+              "id": "r6",
+              "type": "reading-comprehension",
+              "question": "本はどのくらい借りることができますか。",
+              "options": [
+                "1週間",
+                "2週間",
+                "1か月",
+                "2か月"
+              ],
+              "correctAnswer": 1,
+              "explanation": "Rule 3 says '本は２週間借りることができます' (You can borrow books for 2 weeks)."
+            },
+            {
+              "id": "r7",
+              "type": "reading-comprehension",
+              "question": "図書館はいつ休みですか。",
+              "options": [
+                "日曜日",
+                "月曜日",
+                "火曜日",
+                "土曜日"
+              ],
+              "correctAnswer": 1,
+              "explanation": "Rule 4 says '休みの日は月曜日です' (The day off is Monday)."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -78,8 +78,6 @@ const Navbar = () => {
         { name: 'JLPT N3 Tests', path: '/jlpt/n3', icon: '🎯' },
         { name: 'JLPT N2 Tests', path: '/jlpt/n2', icon: '🎯' },
         { name: 'JLPT N1 Tests', path: '/jlpt/n1', icon: '🎯' },
-        { name: 'JLPT Boost', path: '/jlpt/boost', icon: '🚀' },
-        { name: 'JLPT Review', path: '/jlpt/review', icon: '⭐' },
       ]
     },
   ];

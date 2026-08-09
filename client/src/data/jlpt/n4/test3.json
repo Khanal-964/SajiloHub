@@ -1,0 +1,820 @@
+{
+  "id": "n4-test-3",
+  "level": "N4",
+  "title": "JLPT N4 Practice Test 3",
+  "sections": {
+    "vocabulary": {
+      "timeLimit": 25,
+      "questions": [
+        {
+          "id": "v1",
+          "type": "kanji-reading",
+          "question": "【特別】な料理を作りました。",
+          "options": [
+            "とくべつ",
+            "とくへつ",
+            "とっべつ",
+            "とっぺつ"
+          ],
+          "correctAnswer": 0,
+          "explanation": "特別 (とくべつ) means 'special'."
+        },
+        {
+          "id": "v2",
+          "type": "kanji-reading",
+          "question": "この町は【安全】です。",
+          "options": [
+            "あんぜん",
+            "あんせん",
+            "あぜん",
+            "あんちゅう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "安全 (あんぜん) means 'safe'."
+        },
+        {
+          "id": "v3",
+          "type": "kanji-reading",
+          "question": "ごみを【集めて】ください。",
+          "options": [
+            "あつめて",
+            "きめて",
+            "すすめて",
+            "はじめて"
+          ],
+          "correctAnswer": 0,
+          "explanation": "集める (あつめる) means 'to collect/gather'."
+        },
+        {
+          "id": "v4",
+          "type": "kanji-reading",
+          "question": "【音楽】を聞きます。",
+          "options": [
+            "おんらく",
+            "おんがく",
+            "いんがく",
+            "いんらく"
+          ],
+          "correctAnswer": 1,
+          "explanation": "音楽 (おんがく) means 'music'."
+        },
+        {
+          "id": "v5",
+          "type": "kanji-reading",
+          "question": "それは【正しい】答えです。",
+          "options": [
+            "やさしい",
+            "あたらしい",
+            "ただしい",
+            "めずらしい"
+          ],
+          "correctAnswer": 2,
+          "explanation": "正しい (ただしい) means 'correct'."
+        },
+        {
+          "id": "v6",
+          "type": "kanji-reading",
+          "question": "【注意】してください。",
+          "options": [
+            "ちゅうい",
+            "じゅうい",
+            "しゅうい",
+            "しゅい"
+          ],
+          "correctAnswer": 0,
+          "explanation": "注意 (ちゅうい) means 'attention/caution'."
+        },
+        {
+          "id": "v7",
+          "type": "kanji-reading",
+          "question": "私は【洋服】を買いたいです。",
+          "options": [
+            "よふく",
+            "ようふく",
+            "わふく",
+            "わうふく"
+          ],
+          "correctAnswer": 1,
+          "explanation": "洋服 (ようふく) means 'Western clothes' (standard clothes)."
+        },
+        {
+          "id": "v8",
+          "type": "orthography",
+          "question": "【しゅつせき】します。",
+          "options": [
+            "出席",
+            "出石",
+            "主席",
+            "主石"
+          ],
+          "correctAnswer": 0,
+          "explanation": "出席 (しゅっせき) is the kanji for attendance."
+        },
+        {
+          "id": "v9",
+          "type": "orthography",
+          "question": "【きかい】がこわれました。",
+          "options": [
+            "機会",
+            "機械",
+            "期会",
+            "器械"
+          ],
+          "correctAnswer": 1,
+          "explanation": "機械 (きかい) is the kanji for machine."
+        },
+        {
+          "id": "v10",
+          "type": "orthography",
+          "question": "【しつもん】に答えます。",
+          "options": [
+            "質門",
+            "質文",
+            "質問",
+            "室問"
+          ],
+          "correctAnswer": 2,
+          "explanation": "質問 (しつもん) is the kanji for question."
+        },
+        {
+          "id": "v11",
+          "type": "orthography",
+          "question": "【りょうしん】に手紙を書きます。",
+          "options": [
+            "良心",
+            "両親",
+            "料親",
+            "領親"
+          ],
+          "correctAnswer": 1,
+          "explanation": "両親 (りょうしん) is the kanji for parents."
+        },
+        {
+          "id": "v12",
+          "type": "orthography",
+          "question": "【じゅんび】ができました。",
+          "options": [
+            "準備",
+            "準美",
+            "順備",
+            "順美"
+          ],
+          "correctAnswer": 0,
+          "explanation": "準備 (じゅんび) is the kanji for preparation."
+        },
+        {
+          "id": "v13",
+          "type": "orthography",
+          "question": "【としょかん】で勉強します。",
+          "options": [
+            "図書館",
+            "図書舘",
+            "図書間",
+            "図書関"
+          ],
+          "correctAnswer": 0,
+          "explanation": "図書館 (としょかん) is the kanji for library."
+        },
+        {
+          "id": "v14",
+          "type": "context",
+          "question": "彼は約束を（　　）ので、怒りました。",
+          "options": [
+            "やぶった",
+            "まもった",
+            "わすれた",
+            "おぼえた"
+          ],
+          "correctAnswer": 0,
+          "explanation": "約束を破る (やくそくをやぶる) means to break a promise, causing anger."
+        },
+        {
+          "id": "v15",
+          "type": "context",
+          "question": "道に財布が（　　）いました。",
+          "options": [
+            "おちて",
+            "おいて",
+            "すてて",
+            "わすれて"
+          ],
+          "correctAnswer": 0,
+          "explanation": "落ちる (おちる) means to fall/be dropped."
+        },
+        {
+          "id": "v16",
+          "type": "context",
+          "question": "（　　）、これはあなたのペンですか。",
+          "options": [
+            "すみませんが",
+            "あのう",
+            "どうぞ",
+            "はい"
+          ],
+          "correctAnswer": 1,
+          "explanation": "あのう (um/excuse me) is used to tentatively get someone's attention."
+        },
+        {
+          "id": "v17",
+          "type": "context",
+          "question": "この本はとても（　　）ので、すぐに読めました。",
+          "options": [
+            "むずかしかった",
+            "おもしろかった",
+            "つまらなかった",
+            "ながかった"
+          ],
+          "correctAnswer": 1,
+          "explanation": "If you could read it quickly, it was probably interesting (おもしろかった) or easy. Easy wasn't an option."
+        },
+        {
+          "id": "v18",
+          "type": "context",
+          "question": "私は犬より猫の（　　）が好きです。",
+          "options": [
+            "かた",
+            "ほう",
+            "より",
+            "ほど"
+          ],
+          "correctAnswer": 1,
+          "explanation": "〜のほうが好きです means 'I prefer 〜'."
+        },
+        {
+          "id": "v19",
+          "type": "context",
+          "question": "コーヒーに砂糖を（　　）飲みます。",
+          "options": [
+            "いれて",
+            "おいて",
+            "して",
+            "かけて"
+          ],
+          "correctAnswer": 0,
+          "explanation": "You put/add (いれる) sugar into coffee."
+        },
+        {
+          "id": "v20",
+          "type": "context",
+          "question": "毎日練習したので、ピアノを弾くのが（　　）になりました。",
+          "options": [
+            "へた",
+            "じょうず",
+            "きらい",
+            "べんり"
+          ],
+          "correctAnswer": 1,
+          "explanation": "If you practice every day, you become good at it (上手になる)."
+        },
+        {
+          "id": "v21",
+          "type": "context",
+          "question": "このケーキは卵を（　　）に作りました。",
+          "options": [
+            "つかわないで",
+            "つかわなくて",
+            "つかわず",
+            "つかわない"
+          ],
+          "correctAnswer": 0,
+          "explanation": "使わないで (without using) explains the condition/method of making the cake."
+        },
+        {
+          "id": "v22",
+          "type": "context",
+          "question": "シャツの（　　）が取れそうです。",
+          "options": [
+            "ポケット",
+            "ボタン",
+            "えり",
+            "そで"
+          ],
+          "correctAnswer": 1,
+          "explanation": "A button (ボタン) is something that can come off (取れそう)."
+        },
+        {
+          "id": "v23",
+          "type": "context",
+          "question": "ホテルを（　　）します。",
+          "options": [
+            "よやく",
+            "やくそく",
+            "ようじ",
+            "りゆう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "予約 (よやく) means reservation."
+        },
+        {
+          "id": "v24",
+          "type": "paraphrase",
+          "question": "山田さんに【謝りました】。",
+          "options": [
+            "山田さんに「ありがとう」と言いました。",
+            "山田さんに「ごめんなさい」と言いました。",
+            "山田さんに「こんにちは」と言いました。",
+            "山田さんに「さようなら」と言いました。"
+          ],
+          "correctAnswer": 1,
+          "explanation": "謝る (あやまる) means to apologize (ごめんなさいと言う)."
+        },
+        {
+          "id": "v25",
+          "type": "paraphrase",
+          "question": "明日は【都合がいいです】。",
+          "options": [
+            "明日は用事があります。",
+            "明日は忙しいです。",
+            "明日は時間があります。",
+            "明日は気分が悪いです。"
+          ],
+          "correctAnswer": 2,
+          "explanation": "都合がいい (convenient/available) means having time (時間があります)."
+        },
+        {
+          "id": "v26",
+          "type": "paraphrase",
+          "question": "この問題は【複雑です】。",
+          "options": [
+            "この問題は簡単です。",
+            "この問題は難しいです。",
+            "この問題は面白いです。",
+            "この問題はつまらないです。"
+          ],
+          "correctAnswer": 1,
+          "explanation": "複雑 (complicated) implies it's difficult (難しい)."
+        },
+        {
+          "id": "v27",
+          "type": "paraphrase",
+          "question": "部屋を【片付けます】。",
+          "options": [
+            "部屋を汚くします。",
+            "部屋をきれいにします。",
+            "部屋を広くします。",
+            "部屋を明るくします。"
+          ],
+          "correctAnswer": 1,
+          "explanation": "片付ける (to tidy up) means to make it clean/neat (きれいにします)."
+        },
+        {
+          "id": "v28",
+          "type": "paraphrase",
+          "question": "【ぜひ】遊びに来てください。",
+          "options": [
+            "いつでも遊びに来てください。",
+            "必ず遊びに来てください。",
+            "たまに遊びに来てください。",
+            "すぐに遊びに来てください。"
+          ],
+          "correctAnswer": 1,
+          "explanation": "ぜひ expresses a strong request or hope, similar to 必ず (without fail)."
+        },
+        {
+          "id": "v29",
+          "type": "paraphrase",
+          "question": "父は【怒っています】。",
+          "options": [
+            "父は笑っています。",
+            "父は泣いています。",
+            "父は喜んでいます。",
+            "父は気分が悪いです。"
+          ],
+          "correctAnswer": 3,
+          "explanation": "怒る (to get angry). '気分が悪い' can mean in a bad mood, which fits best here among the options."
+        },
+        {
+          "id": "v30",
+          "type": "paraphrase",
+          "question": "【お祝い】をあげました。",
+          "options": [
+            "プレゼントをあげました。",
+            "手紙をあげました。",
+            "お金を貸しました。",
+            "荷物を送りました。"
+          ],
+          "correctAnswer": 0,
+          "explanation": "お祝い (celebration gift) is a type of present (プレゼント)."
+        }
+      ]
+    },
+    "grammar": {
+      "timeLimit": 25,
+      "questions": [
+        {
+          "id": "g1",
+          "type": "grammar-fill",
+          "question": "この本は（　　）やすいです。",
+          "options": [
+            "読む",
+            "読め",
+            "読み",
+            "読んで"
+          ],
+          "correctAnswer": 2,
+          "explanation": "〜やすい (easy to) attaches to the verb stem (読み)."
+        },
+        {
+          "id": "g2",
+          "type": "grammar-fill",
+          "question": "先生に漢字を（　　）ました。",
+          "options": [
+            "教えさせられ",
+            "教えられ",
+            "教えてくれ",
+            "教えてもらい"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Passive form: 先生に教えられる (I was taught by the teacher)."
+        },
+        {
+          "id": "g3",
+          "type": "grammar-fill",
+          "question": "このカメラは高すぎ（　　）、買えません。",
+          "options": [
+            "て",
+            "で",
+            "なので",
+            "だから"
+          ],
+          "correctAnswer": 0,
+          "explanation": "To connect verbs/adjectives as a reason, the te-form is used. 高すぎる -> 高すぎて."
+        },
+        {
+          "id": "g4",
+          "type": "grammar-fill",
+          "question": "雨が降る（　　）に、帰りましょう。",
+          "options": [
+            "前",
+            "後",
+            "時",
+            "間"
+          ],
+          "correctAnswer": 0,
+          "explanation": "前に (before). 'Before it rains'."
+        },
+        {
+          "id": "g5",
+          "type": "grammar-fill",
+          "question": "私は田中さんがどこに住んでいる（　　）知りません。",
+          "options": [
+            "か",
+            "を",
+            "が",
+            "は"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Embedded question takes 'か' (where he lives)."
+        },
+        {
+          "id": "g6",
+          "type": "grammar-fill",
+          "question": "毎日運動（　　）ほうがいいですよ。",
+          "options": [
+            "する",
+            "した",
+            "しない",
+            "して"
+          ],
+          "correctAnswer": 1,
+          "explanation": "〜たほうがいい (had better / should) requires the past plain form."
+        },
+        {
+          "id": "g7",
+          "type": "grammar-fill",
+          "question": "この仕事は誰でも（　　）はずです。",
+          "options": [
+            "できる",
+            "できない",
+            "できた",
+            "できなくない"
+          ],
+          "correctAnswer": 0,
+          "explanation": "はず (should be / expect to) follows the dictionary form (できる)."
+        },
+        {
+          "id": "g8",
+          "type": "grammar-fill",
+          "question": "コーヒーを（　　）ながら、新聞を読みます。",
+          "options": [
+            "飲む",
+            "飲んで",
+            "飲み",
+            "飲んだ"
+          ],
+          "correctAnswer": 2,
+          "explanation": "〜ながら requires the verb stem (飲み)."
+        },
+        {
+          "id": "g9",
+          "type": "grammar-fill",
+          "question": "私は彼にパーティーに（　　）。",
+          "options": [
+            "招待しました",
+            "招待させました",
+            "招待されました",
+            "招待してくれました"
+          ],
+          "correctAnswer": 2,
+          "explanation": "招待される (passive) means 'I was invited by him'."
+        },
+        {
+          "id": "g10",
+          "type": "grammar-fill",
+          "question": "窓が（　　）まま、寝てしまいました。",
+          "options": [
+            "開く",
+            "開いて",
+            "開けた",
+            "開ける"
+          ],
+          "correctAnswer": 2,
+          "explanation": "〜たまま requires past plain form. (開けたまま = leaving it open intentionally)."
+        },
+        {
+          "id": "g11",
+          "type": "grammar-fill",
+          "question": "次の文の ★ に入る最もよいものを一つ選びなさい。\nここ ___ ___ ★ ___ を ___ ください。",
+          "options": [
+            "に",
+            "は",
+            "ごみ",
+            "捨てないで"
+          ],
+          "correctAnswer": 2,
+          "explanation": "The correct order is: ここにはごみを捨てないでください。 The star is 'ごみ'."
+        },
+        {
+          "id": "g12",
+          "type": "grammar-fill",
+          "question": "あした ___ ___ ★ ___ は ___ ないでしょう。",
+          "options": [
+            "降ら",
+            "たぶん",
+            "が",
+            "雨"
+          ],
+          "correctAnswer": 2,
+          "explanation": "The correct order is: あしたはたぶん雨が降らないでしょう。 The star is 'が'."
+        },
+        {
+          "id": "g13",
+          "type": "grammar-fill",
+          "question": "私 ___ ___ ★ ___ よう ___ います。",
+          "options": [
+            "毎日",
+            "歩く",
+            "は",
+            "して"
+          ],
+          "correctAnswer": 1,
+          "explanation": "The correct order is: 私は毎日歩くようにしています。 The star is '歩く'."
+        },
+        {
+          "id": "g14",
+          "type": "grammar-fill",
+          "question": "どんな ___ ___ ★ ___ も ___ できません。",
+          "options": [
+            "こと",
+            "が",
+            "あって",
+            "私"
+          ],
+          "correctAnswer": 2,
+          "explanation": "The correct order is: どんなことがあってもできません。 The star is 'あって'."
+        },
+        {
+          "id": "g15",
+          "type": "grammar-fill",
+          "question": "本 ___ ___ ★ ___ ながら ___ しました。",
+          "options": [
+            "読み",
+            "を",
+            "食事",
+            "を"
+          ],
+          "correctAnswer": 0,
+          "explanation": "The correct order is: 本を読みながら食事をしました。 The star is '読み'."
+        },
+        {
+          "id": "g16",
+          "type": "grammar-fill",
+          "question": "文章を読んで、（１）に入る言葉を選びなさい。\n私が日本語を勉強し（１）のは、２年前です。",
+          "options": [
+            "始める",
+            "始めた",
+            "始めて",
+            "始め"
+          ],
+          "correctAnswer": 1,
+          "explanation": "始めたのは (The time I started...) nominalizes the past plain form."
+        },
+        {
+          "id": "g17",
+          "type": "grammar-fill",
+          "question": "（２）に入る言葉を選びなさい。\n最初は、ひらがな（２）カタカナしか読めませんでした。",
+          "options": [
+            "と",
+            "や",
+            "とか",
+            "など"
+          ],
+          "correctAnswer": 0,
+          "explanation": "ひらがなとカタカナ (Hiragana and Katakana)."
+        },
+        {
+          "id": "g18",
+          "type": "grammar-fill",
+          "question": "（３）に入る言葉を選びなさい。\nでも、毎日（３）、だんだんわかるようになりました。",
+          "options": [
+            "勉強すると",
+            "勉強すれば",
+            "勉強したので",
+            "勉強するのに"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Because I studied every day... 勉強したので."
+        },
+        {
+          "id": "g19",
+          "type": "grammar-fill",
+          "question": "（４）に入る言葉を選びなさい。\n今は、日本のドラマが（４）。",
+          "options": [
+            "見ます",
+            "見えます",
+            "見られます",
+            "見せます"
+          ],
+          "correctAnswer": 2,
+          "explanation": "見られる (can watch/understand). The potential form."
+        },
+        {
+          "id": "g20",
+          "type": "grammar-fill",
+          "question": "（５）に入る言葉を選びなさい。\n字幕（スーパー）が（５）も、だいたいわかります。",
+          "options": [
+            "あって",
+            "ある",
+            "なくても",
+            "ない"
+          ],
+          "correctAnswer": 2,
+          "explanation": "なくても (Even without). 'Even without subtitles, I mostly understand.'"
+        },
+        {
+          "id": "g21",
+          "type": "grammar-fill",
+          "question": "（６）に入る言葉を選びなさい。\n将来は、日本で（６）と思っています。",
+          "options": [
+            "働く",
+            "働こう",
+            "働いて",
+            "働いた"
+          ],
+          "correctAnswer": 1,
+          "explanation": "〜ようと思っています (Thinking of doing) requires the volitional form (働こう)."
+        },
+        {
+          "id": "g22",
+          "type": "grammar-fill",
+          "question": "（７）に入る言葉を選びなさい。\nそのために、もっと日本語を（７）ばなりません。",
+          "options": [
+            "上手になれ",
+            "上手にならなけれ",
+            "上手になり",
+            "上手になら"
+          ],
+          "correctAnswer": 1,
+          "explanation": "〜なければなりません (Must do). ならない -> ならなければなりません."
+        },
+        {
+          "id": "g23",
+          "type": "grammar-fill",
+          "question": "（８）に入る言葉を選びなさい。\n言葉だけ（８）、日本の文化も勉強したいです。",
+          "options": [
+            "でなく",
+            "ではなくて",
+            "じゃなくて",
+            "ではない"
+          ],
+          "correctAnswer": 0,
+          "explanation": "〜だけでなく (Not only... but also)."
+        }
+      ]
+    },
+    "reading": {
+      "timeLimit": 55,
+      "passages": [
+        {
+          "id": "p1",
+          "text": "私はいつも自転車で学校へ行きます。家から学校まで30分くらいかかります。雨の日はバスで行きますが、バスは道が混むので、時間がかかります。だから、雨の日は早く家を出なければなりません。",
+          "questions": [
+            {
+              "id": "r1",
+              "type": "reading-comprehension",
+              "question": "この人は晴れの日、どうやって学校へ行きますか。",
+              "options": [
+                "バスで",
+                "歩いて",
+                "自転車で",
+                "電車で"
+              ],
+              "correctAnswer": 2,
+              "explanation": "The text says 'いつも自転車で学校へ行きます' (I always go to school by bicycle), except on rainy days."
+            },
+            {
+              "id": "r2",
+              "type": "reading-comprehension",
+              "question": "どうして雨の日は早く家を出ますか。",
+              "options": [
+                "バスが遅いから",
+                "自転車が使えないから",
+                "道が混んで時間がかかるから",
+                "歩くのが遅いから"
+              ],
+              "correctAnswer": 2,
+              "explanation": "The text says 'バスは道が混むので、時間がかかります' (The bus takes time because the road is crowded)."
+            }
+          ]
+        },
+        {
+          "id": "p2",
+          "text": "最近、インターネットで買い物をする人が増えています。店に行かなくても好きな物が買えるので、とても便利です。しかし、サイズが合わなかったり、写真と色が違ったりすることもあるので、注意が必要です。",
+          "questions": [
+            {
+              "id": "r3",
+              "type": "reading-comprehension",
+              "question": "インターネットでの買い物について、どう言っていますか。",
+              "options": [
+                "便利だが、気をつけることもある",
+                "便利なので、注意しなくてもいい",
+                "不便だが、安い",
+                "店で買う方がいい"
+              ],
+              "correctAnswer": 0,
+              "explanation": "The text mentions it is convenient (とても便利) but cautions are needed (注意が必要です)."
+            },
+            {
+              "id": "r4",
+              "type": "reading-comprehension",
+              "question": "どんな問題があると言っていますか。",
+              "options": [
+                "品物が届かないこと",
+                "写真と違う物が来ること",
+                "サイズや色が違うことがあること",
+                "お金を払いすぎること"
+              ],
+              "correctAnswer": 2,
+              "explanation": "The text says 'サイズが合わなかったり、写真と色が違ったりすることもある' (Sometimes the size doesn't fit or the color differs from the picture)."
+            }
+          ]
+        },
+        {
+          "id": "p3",
+          "text": "【図書館の利用案内】\n・開館時間：午前9時〜午後8時（土日は午後6時まで）\n・休館日：毎週月曜日、祝日\n・貸出：1人5冊まで、2週間\n※本を返すのが遅れると、しばらく新しい本を借りることができません。気をつけてください。",
+          "questions": [
+            {
+              "id": "r5",
+              "type": "reading-comprehension",
+              "question": "土曜日の午後7時に図書館へ行きました。どうなりますか。",
+              "options": [
+                "本を借りることができる",
+                "図書館は閉まっている",
+                "特別な本だけ借りられる",
+                "5冊以上借りられる"
+              ],
+              "correctAnswer": 1,
+              "explanation": "The text says '土日は午後6時まで' (Weekends until 6 PM). So at 7 PM it is closed."
+            },
+            {
+              "id": "r6",
+              "type": "reading-comprehension",
+              "question": "本を返すのが遅れたら、どうなりますか。",
+              "options": [
+                "お金を払う",
+                "本を買わなければならない",
+                "新しい本が借りられなくなる",
+                "何も問題はない"
+              ],
+              "correctAnswer": 2,
+              "explanation": "The text says 'しばらく新しい本を借りることができません' (You won't be able to borrow new books for a while)."
+            },
+            {
+              "id": "r7",
+              "type": "reading-comprehension",
+              "question": "図書館はいつ休みですか。",
+              "options": [
+                "月曜日と土日",
+                "月曜日と祝日",
+                "毎日",
+                "日曜日と祝日"
+              ],
+              "correctAnswer": 1,
+              "explanation": "The text says '毎週月曜日、祝日' (Every Monday, and holidays)."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,820 @@
+{
+  "id": "n3-test-5",
+  "level": "N3",
+  "title": "JLPT N3 Practice Test 5",
+  "sections": {
+    "vocabulary": {
+      "timeLimit": 30,
+      "questions": [
+        {
+          "id": "v1",
+          "type": "kanji-reading",
+          "question": "彼は【労働】条件に不満がある。",
+          "options": [
+            "ろうどう",
+            "ろうとう",
+            "ろうちょう",
+            "ろうにょう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "労働 (ろうどう) means 'labor / work'."
+        },
+        {
+          "id": "v2",
+          "type": "kanji-reading",
+          "question": "この地域の【農業】について調べる。",
+          "options": [
+            "のうぎょう",
+            "のうごう",
+            "のぎょう",
+            "のごう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "農業 (のうぎょう) means 'agriculture'."
+        },
+        {
+          "id": "v3",
+          "type": "kanji-reading",
+          "question": "あの映画は【印象】に残った。",
+          "options": [
+            "いんしょう",
+            "いんそう",
+            "えんしょう",
+            "えんそう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "印象 (いんしょう) means 'impression'."
+        },
+        {
+          "id": "v4",
+          "type": "kanji-reading",
+          "question": "新しい【法律】ができる。",
+          "options": [
+            "ほうりつ",
+            "ほうりち",
+            "ほうりっつ",
+            "ほうれつ"
+          ],
+          "correctAnswer": 0,
+          "explanation": "法律 (ほうりつ) means 'law'."
+        },
+        {
+          "id": "v5",
+          "type": "kanji-reading",
+          "question": "【絶対】に許さない。",
+          "options": [
+            "ぜったい",
+            "ぜった",
+            "ぜっだい",
+            "ぜっだ"
+          ],
+          "correctAnswer": 0,
+          "explanation": "絶対 (ぜったい) means 'absolutely'."
+        },
+        {
+          "id": "v6",
+          "type": "kanji-reading",
+          "question": "彼女は【冷静】な判断をした。",
+          "options": [
+            "れいせい",
+            "れいしょう",
+            "りょうせい",
+            "りょうしょう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "冷静 (れいせい) means 'calm / composed'."
+        },
+        {
+          "id": "v7",
+          "type": "kanji-reading",
+          "question": "【地球】の環境を守る。",
+          "options": [
+            "ちきゅう",
+            "ちきゅ",
+            "じきゅう",
+            "じきゅ"
+          ],
+          "correctAnswer": 0,
+          "explanation": "地球 (ちきゅう) means 'the earth'."
+        },
+        {
+          "id": "v8",
+          "type": "kanji-reading",
+          "question": "あの人の【態度】が気に入らない。",
+          "options": [
+            "たいど",
+            "たいと",
+            "だいど",
+            "だいと"
+          ],
+          "correctAnswer": 0,
+          "explanation": "態度 (たいど) means 'attitude'."
+        },
+        {
+          "id": "v9",
+          "type": "orthography",
+          "question": "【けいざい】ニュースを見る。",
+          "options": [
+            "経済",
+            "経財",
+            "経罪",
+            "経在"
+          ],
+          "correctAnswer": 0,
+          "explanation": "経済 (けいざい) is the kanji for economy."
+        },
+        {
+          "id": "v10",
+          "type": "orthography",
+          "question": "【せきにん】を果たす。",
+          "options": [
+            "責任",
+            "責人",
+            "積任",
+            "責認"
+          ],
+          "correctAnswer": 0,
+          "explanation": "責任 (せきにん) is the kanji for responsibility."
+        },
+        {
+          "id": "v11",
+          "type": "orthography",
+          "question": "【じゅんび】ができた。",
+          "options": [
+            "準備",
+            "準美",
+            "順備",
+            "順美"
+          ],
+          "correctAnswer": 0,
+          "explanation": "準備 (じゅんび) is the kanji for preparation."
+        },
+        {
+          "id": "v12",
+          "type": "orthography",
+          "question": "【きそく】を守る。",
+          "options": [
+            "規則",
+            "規側",
+            "記則",
+            "規息"
+          ],
+          "correctAnswer": 0,
+          "explanation": "規則 (きそく) is the kanji for rule/regulation."
+        },
+        {
+          "id": "v13",
+          "type": "orthography",
+          "question": "彼は【しょうじき】な人だ。",
+          "options": [
+            "正直",
+            "正食",
+            "正植",
+            "正色"
+          ],
+          "correctAnswer": 0,
+          "explanation": "正直 (しょうじき) is the kanji for honest."
+        },
+        {
+          "id": "v14",
+          "type": "orthography",
+          "question": "【けっか】を発表する。",
+          "options": [
+            "結果",
+            "結化",
+            "結課",
+            "結科"
+          ],
+          "correctAnswer": 0,
+          "explanation": "結果 (けっか) is the kanji for result."
+        },
+        {
+          "id": "v15",
+          "type": "context",
+          "question": "このコーヒーは少し（　　）が、美味しい。",
+          "options": [
+            "にがい",
+            "あまい",
+            "すっぱい",
+            "からい"
+          ],
+          "correctAnswer": 0,
+          "explanation": "苦い (にがい) means 'bitter'."
+        },
+        {
+          "id": "v16",
+          "type": "context",
+          "question": "旅行の（　　）が変更になった。",
+          "options": [
+            "にってい",
+            "ほうほう",
+            "りゆう",
+            "きそく"
+          ],
+          "correctAnswer": 0,
+          "explanation": "日程 (にってい) means 'itinerary / schedule'."
+        },
+        {
+          "id": "v17",
+          "type": "context",
+          "question": "彼はとても（　　）があるので、どんなスポーツでも得意だ。",
+          "options": [
+            "うんどうしんけい",
+            "せいかく",
+            "たいど",
+            "きぶん"
+          ],
+          "correctAnswer": 0,
+          "explanation": "運動神経 (うんどうしんけい) means 'motor reflexes / athletic ability'."
+        },
+        {
+          "id": "v18",
+          "type": "context",
+          "question": "明日の会議に（　　）するため、準備をしている。",
+          "options": [
+            "しゅっせき",
+            "けっせき",
+            "ちこく",
+            "さんか"
+          ],
+          "correctAnswer": 0,
+          "explanation": "出席 (しゅっせき) means 'attendance'."
+        },
+        {
+          "id": "v19",
+          "type": "context",
+          "question": "彼女はいつも（　　）文句を言っている。",
+          "options": [
+            "ぶつぶつ",
+            "ぺらぺら",
+            "すやすや",
+            "にこにこ"
+          ],
+          "correctAnswer": 0,
+          "explanation": "ぶつぶつ means 'muttering / grumbling'."
+        },
+        {
+          "id": "v20",
+          "type": "context",
+          "question": "この薬は副作用の（　　）があります。",
+          "options": [
+            "おそれ",
+            "しんぱい",
+            "きけん",
+            "おわび"
+          ],
+          "correctAnswer": 0,
+          "explanation": "おそれ means 'risk / fear'."
+        },
+        {
+          "id": "v21",
+          "type": "context",
+          "question": "彼は（　　）な人なので、約束は絶対に守る。",
+          "options": [
+            "まじめ",
+            "おとなしい",
+            "しんせつ",
+            "ていねい"
+          ],
+          "correctAnswer": 0,
+          "explanation": "真面目 (まじめ) means 'serious / earnest'."
+        },
+        {
+          "id": "v22",
+          "type": "context",
+          "question": "毎日（　　）を書いて、一日を振り返る。",
+          "options": [
+            "にっき",
+            "てがみ",
+            "さくぶん",
+            "レポート"
+          ],
+          "correctAnswer": 0,
+          "explanation": "日記 (にっき) means 'diary'."
+        },
+        {
+          "id": "v23",
+          "type": "context",
+          "question": "今日は（　　）がないので、映画を見に行こう。",
+          "options": [
+            "ようじ",
+            "やくそく",
+            "しごと",
+            "じゅぎょう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "用事 (ようじ) means 'errands'."
+        },
+        {
+          "id": "v24",
+          "type": "context",
+          "question": "部屋を（　　）にするために、掃除機をかける。",
+          "options": [
+            "きれい",
+            "きたなく",
+            "ひろく",
+            "あかるく"
+          ],
+          "correctAnswer": 0,
+          "explanation": "きれい means 'clean'."
+        },
+        {
+          "id": "v25",
+          "type": "context",
+          "question": "料理に少し塩を（　　）味がよくなる。",
+          "options": [
+            "たすと",
+            "ひくと",
+            "かけると",
+            "いれると"
+          ],
+          "correctAnswer": 0,
+          "explanation": "足す (たす) means 'to add'."
+        },
+        {
+          "id": "v26",
+          "type": "paraphrase",
+          "question": "彼は【あきらめた】ようだ。",
+          "options": [
+            "彼はやめたようだ。",
+            "彼は始めたようだ。",
+            "彼は怒ったようだ。",
+            "彼は喜んだようだ。"
+          ],
+          "correctAnswer": 0,
+          "explanation": "諦める means 'to give up' (やめる)."
+        },
+        {
+          "id": "v27",
+          "type": "paraphrase",
+          "question": "【常に】努力することが大切だ。",
+          "options": [
+            "いつも努力することが大切だ。",
+            "たまに努力することが大切だ。",
+            "絶対に努力することが大切だ。",
+            "少し努力することが大切だ。"
+          ],
+          "correctAnswer": 0,
+          "explanation": "常に (つねに) means 'always' (いつも)."
+        },
+        {
+          "id": "v28",
+          "type": "paraphrase",
+          "question": "【おそらく】雨だろう。",
+          "options": [
+            "たぶん雨だろう。",
+            "絶対に雨だろう。",
+            "少し雨だろう。",
+            "ずっと雨だろう。"
+          ],
+          "correctAnswer": 0,
+          "explanation": "おそらく means 'probably' (たぶん)."
+        },
+        {
+          "id": "v29",
+          "type": "paraphrase",
+          "question": "部屋が【散らかっている】。",
+          "options": [
+            "部屋が汚くなっている。",
+            "部屋がきれいに片付いている。",
+            "部屋が広くなっている。",
+            "部屋が暗くなっている。"
+          ],
+          "correctAnswer": 0,
+          "explanation": "散らかる means 'to be messy' (汚くなっている)."
+        },
+        {
+          "id": "v30",
+          "type": "paraphrase",
+          "question": "彼は【真面目】だ。",
+          "options": [
+            "彼はよく勉強や仕事をする。",
+            "彼はよく遊ぶ。",
+            "彼はよく笑う。",
+            "彼はよく休む。"
+          ],
+          "correctAnswer": 0,
+          "explanation": "真面目 means 'serious/earnest' (よく勉強や仕事をする)."
+        },
+        {
+          "id": "v31",
+          "type": "paraphrase",
+          "question": "【なるべく】早く来てください。",
+          "options": [
+            "できるだけ早く来てください。",
+            "絶対に早く来てください。",
+            "無理しないで早く来てください。",
+            "必ず早く来てください。"
+          ],
+          "correctAnswer": 0,
+          "explanation": "なるべく means 'as much as possible' (できるだけ)."
+        },
+        {
+          "id": "v32",
+          "type": "paraphrase",
+          "question": "この本は【役に立つ】。",
+          "options": [
+            "この本は便利だ。",
+            "この本は面白い。",
+            "この本は難しい。",
+            "この本は高い。"
+          ],
+          "correctAnswer": 0,
+          "explanation": "役に立つ means 'useful' (便利だ)."
+        },
+        {
+          "id": "v33",
+          "type": "paraphrase",
+          "question": "彼は【慌てて】いる。",
+          "options": [
+            "彼は急いでいる。",
+            "彼は怒っている。",
+            "彼は泣いている。",
+            "彼は喜んでいる。"
+          ],
+          "correctAnswer": 0,
+          "explanation": "慌てる means 'to panic/hurry' (急いでいる)."
+        },
+        {
+          "id": "v34",
+          "type": "paraphrase",
+          "question": "彼は【うそをついた】。",
+          "options": [
+            "彼は本当ではないことを言った。",
+            "彼は本当のことを言った。",
+            "彼は面白いことを言った。",
+            "彼は悲しいことを言った。"
+          ],
+          "correctAnswer": 0,
+          "explanation": "嘘をつく means 'to tell a lie' (本当ではないことを言った)."
+        },
+        {
+          "id": "v35",
+          "type": "paraphrase",
+          "question": "【とっくに】終わりました。",
+          "options": [
+            "ずっと前に終わりました。",
+            "今終わりました。",
+            "これから終わります。",
+            "もうすぐ終わります。"
+          ],
+          "correctAnswer": 0,
+          "explanation": "とっくに means 'long ago' (ずっと前に)."
+        }
+      ]
+    },
+    "grammar": {
+      "timeLimit": 30,
+      "questions": [
+        {
+          "id": "g1",
+          "type": "grammar-fill",
+          "question": "この本は子供（　　）書かれています。",
+          "options": [
+            "向けに",
+            "向きに",
+            "対して",
+            "にとって"
+          ],
+          "correctAnswer": 0,
+          "explanation": "〜向け (intended for)."
+        },
+        {
+          "id": "g2",
+          "type": "grammar-fill",
+          "question": "雨が降っている（　　）、外で遊びましょう。",
+          "options": [
+            "のに",
+            "から",
+            "ので",
+            "ため"
+          ],
+          "correctAnswer": 0,
+          "explanation": "〜のに (even though)."
+        },
+        {
+          "id": "g3",
+          "type": "grammar-fill",
+          "question": "彼が来ない（　　）、何か理由があるはずだ。",
+          "options": [
+            "からには",
+            "ことには",
+            "ためには",
+            "わけには"
+          ],
+          "correctAnswer": 0,
+          "explanation": "〜からには (now that / since)."
+        },
+        {
+          "id": "g4",
+          "type": "grammar-fill",
+          "question": "いくら忙しく（　　）、食事はちゃんと取りなさい。",
+          "options": [
+            "ても",
+            "たら",
+            "れば",
+            "と"
+          ],
+          "correctAnswer": 0,
+          "explanation": "いくら〜ても (no matter how)."
+        },
+        {
+          "id": "g5",
+          "type": "grammar-fill",
+          "question": "このレストランは美味しい（　　）、いつも混んでいる。",
+          "options": [
+            "だけに",
+            "ばかりか",
+            "うえに",
+            "だけでなく"
+          ],
+          "correctAnswer": 0,
+          "explanation": "〜だけに (precisely because)."
+        },
+        {
+          "id": "g6",
+          "type": "grammar-fill",
+          "question": "明日の会議は、社長（　　）中止になりました。",
+          "options": [
+            "によって",
+            "について",
+            "に対して",
+            "にとって"
+          ],
+          "correctAnswer": 0,
+          "explanation": "〜によって (by) indicates the agent of an action."
+        },
+        {
+          "id": "g7",
+          "type": "grammar-fill",
+          "question": "あの人は毎日運動しているから、病気になる（　　）。",
+          "options": [
+            "はずがない",
+            "わけにはいかない",
+            "ことになっている",
+            "ものだ"
+          ],
+          "correctAnswer": 0,
+          "explanation": "〜はずがない (it's impossible that / there's no way)."
+        },
+        {
+          "id": "g8",
+          "type": "grammar-fill",
+          "question": "このパソコンは古い（　　）、とても使いやすい。",
+          "options": [
+            "わりに",
+            "くせに",
+            "せいで",
+            "おかげで"
+          ],
+          "correctAnswer": 0,
+          "explanation": "〜わりに (for / considering that)."
+        },
+        {
+          "id": "g9",
+          "type": "grammar-fill",
+          "question": "彼はまるで日本人（　　）日本語を話す。",
+          "options": [
+            "のように",
+            "みたいに",
+            "らしく",
+            "そうで"
+          ],
+          "correctAnswer": 0,
+          "explanation": "まるで〜のように (just like)."
+        },
+        {
+          "id": "g10",
+          "type": "grammar-fill",
+          "question": "明日は早く起きる（　　）、もう寝ます。",
+          "options": [
+            "から",
+            "ので",
+            "ため",
+            "ことだから"
+          ],
+          "correctAnswer": 0,
+          "explanation": "〜から (because)."
+        },
+        {
+          "id": "g11",
+          "type": "grammar-fill",
+          "question": "私が言った（　　）書いてください。",
+          "options": [
+            "とおりに",
+            "ままに",
+            "ように",
+            "ために"
+          ],
+          "correctAnswer": 0,
+          "explanation": "〜とおりに (exactly as)."
+        },
+        {
+          "id": "g12",
+          "type": "grammar-fill",
+          "question": "田中さんは今、出かけている（　　）です。",
+          "options": [
+            "最中",
+            "間",
+            "うち",
+            "たび"
+          ],
+          "correctAnswer": 0,
+          "explanation": "〜最中だ (in the middle of doing)."
+        },
+        {
+          "id": "g13",
+          "type": "grammar-fill",
+          "question": "私（　　）、家族が一番大切です。",
+          "options": [
+            "にとって",
+            "について",
+            "に対して",
+            "によって"
+          ],
+          "correctAnswer": 0,
+          "explanation": "〜にとって (for / from the perspective of)."
+        },
+        {
+          "id": "g14",
+          "type": "grammar-fill",
+          "question": "次の文の ★ に入る最もよいものを一つ選びなさい。\n私 ___ ___ ★ ___ を ___ はずがない。",
+          "options": [
+            "彼が",
+            "そんな",
+            "こと",
+            "する"
+          ],
+          "correctAnswer": 2,
+          "explanation": "The correct order is: 彼がそんなことをするはずがない。 The star is 'こと'."
+        },
+        {
+          "id": "g15",
+          "type": "grammar-fill",
+          "question": "先生 ___ ___ ★ ___ に ___ ました。",
+          "options": [
+            "は",
+            "学生",
+            "からの質問",
+            "答え"
+          ],
+          "correctAnswer": 2,
+          "explanation": "The correct order is: 先生は学生からの質問に答えました。 The star is 'からの質問'."
+        },
+        {
+          "id": "g16",
+          "type": "grammar-fill",
+          "question": "明日 ___ ___ ★ ___ ても ___ できません。",
+          "options": [
+            "雨",
+            "が",
+            "降っ",
+            "試合は"
+          ],
+          "correctAnswer": 1,
+          "explanation": "The correct order is: 明日雨が降っても試合はできません。 The star is 'が'."
+        },
+        {
+          "id": "g17",
+          "type": "grammar-fill",
+          "question": "彼 ___ ___ ★ ___ よう ___ います。",
+          "options": [
+            "は",
+            "毎日",
+            "走る",
+            "にして"
+          ],
+          "correctAnswer": 2,
+          "explanation": "The correct order is: 彼は毎日走るようにしています。 The star is '走る'."
+        },
+        {
+          "id": "g18",
+          "type": "grammar-fill",
+          "question": "この ___ ___ ★ ___ は ___ でしょう。",
+          "options": [
+            "本",
+            "誰",
+            "の",
+            "もの"
+          ],
+          "correctAnswer": 2,
+          "explanation": "The correct order is: この本は誰のものでしょう。 The star is 'の'."
+        }
+      ]
+    },
+    "reading": {
+      "timeLimit": 40,
+      "passages": [
+        {
+          "id": "p1",
+          "text": "日本の生活で、外国人が驚くことの一つに「自動販売機」の多さがあります。街のあちこちにあり、いつでも冷たい飲み物や温かい飲み物を買うことができます。種類も豊富で、飲み物だけでなく、アイスクリームや本などを売っている自動販売機もあります。これは、日本の治安が良いことや、機械の故障が少ないことが理由だと言われています。",
+          "questions": [
+            {
+              "id": "r1",
+              "type": "reading-comprehension",
+              "question": "外国人が驚くことは何ですか。",
+              "options": [
+                "自動販売機が多いこと",
+                "飲み物が高いこと",
+                "自動販売機がよく壊れること",
+                "自動販売機が少ないこと"
+              ],
+              "correctAnswer": 0,
+              "explanation": "The text says '外国人が驚くことの一つに「自動販売機」の多さがあります'."
+            },
+            {
+              "id": "r2",
+              "type": "reading-comprehension",
+              "question": "自動販売機が多い理由は何だと言われていますか。",
+              "options": [
+                "治安が良くて故障が少ないから",
+                "外国人がよく使うから",
+                "店がないから",
+                "電気代が安いから"
+              ],
+              "correctAnswer": 0,
+              "explanation": "The text says 'これは、日本の治安が良いことや、機械の故障が少ないことが理由だと言われています'."
+            }
+          ]
+        },
+        {
+          "id": "p2",
+          "text": "私は先週末、一人で温泉に行きました。温泉に入ると、体の疲れが取れて、とてもリラックスできます。また、温泉の周りの景色もきれいで、心が落ち着きました。しかし、温泉の温度が高すぎて、長く入っていられなかったのが少し残念でした。次回は、もう少し温度の低い温泉に行きたいです。",
+          "questions": [
+            {
+              "id": "r3",
+              "type": "reading-comprehension",
+              "question": "温泉に入ってどう感じましたか。",
+              "options": [
+                "体の疲れが取れてリラックスできた",
+                "疲れがもっとひどくなった",
+                "退屈だった",
+                "景色がきれいではなかった"
+              ],
+              "correctAnswer": 0,
+              "explanation": "The text says '体の疲れが取れて、とてもリラックスできます'."
+            },
+            {
+              "id": "r4",
+              "type": "reading-comprehension",
+              "question": "何が少し残念でしたか。",
+              "options": [
+                "温泉の温度が高すぎたこと",
+                "景色がきれいでなかったこと",
+                "お金がかかりすぎたこと",
+                "一人だったこと"
+              ],
+              "correctAnswer": 0,
+              "explanation": "The text says '温泉の温度が高すぎて、長く入っていられなかったのが少し残念でした'."
+            }
+          ]
+        },
+        {
+          "id": "p3",
+          "text": "【町内会の皆様へ ゴミの出し方について】\n・燃えるゴミは、毎週火曜日と金曜日の朝8時までに出してください。\n・燃えないゴミは、第1・第3水曜日の朝8時までに出してください。\n・粗大ゴミ（自転車、家具など）は、市役所に連絡して回収日を決めてください。有料です。\n・ゴミは決められた場所に置いてください。他の場所に置くと、近所の迷惑になります。",
+          "questions": [
+            {
+              "id": "r5",
+              "type": "reading-comprehension",
+              "question": "燃えるゴミはいつ出しますか。",
+              "options": [
+                "毎週火曜日と金曜日の朝8時まで",
+                "毎週水曜日の朝8時まで",
+                "第1・第3水曜日の朝8時まで",
+                "いつでもいい"
+              ],
+              "correctAnswer": 0,
+              "explanation": "The text says '燃えるゴミは、毎週火曜日と金曜日の朝8時までに出してください'."
+            },
+            {
+              "id": "r6",
+              "type": "reading-comprehension",
+              "question": "古い自転車を捨てたい時、どうすればいいですか。",
+              "options": [
+                "火曜日の朝にゴミ置き場に出す",
+                "市役所に連絡して回収日を決める",
+                "燃えないゴミの日に出す",
+                "どこかに置いておく"
+              ],
+              "correctAnswer": 1,
+              "explanation": "The text says '粗大ゴミ（自転車、家具など）は、市役所に連絡して回収日を決めてください'."
+            },
+            {
+              "id": "r7",
+              "type": "reading-comprehension",
+              "question": "ゴミの出し方について、注意することは何ですか。",
+              "options": [
+                "決められた場所に置くこと",
+                "夜に出すこと",
+                "きれいに洗って出すこと",
+                "できるだけ少なくすること"
+              ],
+              "correctAnswer": 0,
+              "explanation": "The text says 'ゴミは決められた場所に置いてください'."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
