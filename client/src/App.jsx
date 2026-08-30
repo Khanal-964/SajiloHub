@@ -18,6 +18,9 @@ import JlptOverview from './pages/JLPT/JlptOverview';
 import JlptLevel from './pages/JLPT/JlptLevel';
 import JlptTestEngine from './pages/JLPT/JlptTestEngine';
 import JlptResult from './pages/JLPT/JlptResult';
+import FlashcardsOverview from './pages/Flashcards/FlashcardsOverview';
+import FlashcardsLevel from './pages/Flashcards/FlashcardsLevel';
+import FlashcardEngine from './pages/Flashcards/FlashcardEngine';
 import GrammarLessonsList from './pages/Theory/GrammarLessonsList';
 import GrammarLessonView from './pages/Theory/GrammarLessonView';
 import GrammarTopicDetail from './pages/Theory/GrammarTopicDetail';
@@ -134,6 +137,14 @@ function App() {
       <Route path="/jlpt/:level" element={<ProtectedRoute><JlptLevel /></ProtectedRoute>} />
       <Route path="/jlpt/:level/test/:testId" element={<ProtectedRoute><JlptTestEngine /></ProtectedRoute>} />
       <Route path="/jlpt/:level/test/:testId/results" element={<ProtectedRoute><JlptResult /></ProtectedRoute>} />
+
+      {/* Flashcards (Protected) */}
+      <Route path="/flashcards" element={<ProtectedRoute><FlashcardsOverview /></ProtectedRoute>} />
+      <Route path="/flashcards/:level" element={<ProtectedRoute><FlashcardsLevel /></ProtectedRoute>} />
+      <Route
+        path="/flashcards/:level/section/:sectionId/play"
+        element={<ProtectedRoute><FlashcardEngine /></ProtectedRoute>}
+      />
 
       {/* Guest-only routes */}
       <Route

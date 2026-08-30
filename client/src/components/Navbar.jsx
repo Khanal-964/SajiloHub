@@ -80,6 +80,17 @@ const Navbar = () => {
         { name: 'JLPT N1 Tests', path: '/jlpt/n1', icon: '🎯' },
       ]
     },
+    {
+      name: 'Flashcards',
+      path: '/flashcards',
+      dropdown: [
+        { name: 'JLPT N5 Flashcards', path: '/flashcards/n5', icon: '🃏' },
+        { name: 'JLPT N4 Flashcards', path: '/flashcards/n4', icon: '🃏' },
+        { name: 'JLPT N3 Flashcards', path: '/flashcards/n3', icon: '🃏' },
+        { name: 'JLPT N2 Flashcards', path: '/flashcards/n2', icon: '🃏' },
+        { name: 'JLPT N1 Flashcards', path: '/flashcards/n1', icon: '🃏' },
+      ]
+    },
   ];
 
   return (

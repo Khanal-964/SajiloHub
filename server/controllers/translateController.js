@@ -135,7 +135,7 @@ exports.translate = async (req, res) => {
     }
 
     const params = new URLSearchParams({
-      client: 'gtx',
+      client: 'dict-chrome-ex',
       sl: source || 'auto',
       tl: target,
       dt: 't',
@@ -206,7 +206,7 @@ exports.detect = async (req, res) => {
 
     // Use translate endpoint with sl=auto to detect language
     const params = new URLSearchParams({
-      client: 'gtx',
+      client: 'dict-chrome-ex',
       sl: 'auto',
       tl: 'en',
       dt: 't',
