@@ -16,7 +16,7 @@ A full-stack authentication system (Login, Registration, Google OAuth 2.0) for a
 
 ```
 SajiloHub/
-├── client/                          # React frontend
+├── frontend/                        # React frontend
 │   ├── src/
 │   │   ├── components/
 │   │   │   └── GoogleAuthButton.jsx # Google Sign-In button
@@ -35,9 +35,9 @@ SajiloHub/
 │   ├── index.html
 │   ├── vite.config.js               # Vite + API proxy config
 │   ├── package.json
-│   └── .env                         # VITE_GOOGLE_CLIENT_ID
+│   └── .env                         # VITE_GOOGLE_CLIENT_ID (local only)
 │
-├── server/                          # Express backend
+├── backend/                         # Express backend
 │   ├── config/
 │   │   └── db.js                    # MySQL connection pool
 │   ├── controllers/
@@ -46,11 +46,12 @@ SajiloHub/
 │   │   └── authMiddleware.js        # JWT verification
 │   ├── routes/
 │   │   └── authRoutes.js            # Route definitions
-│   ├── db/
-│   │   └── schema.sql               # MySQL table creation
 │   ├── server.js                    # Express entry point
 │   ├── package.json
-│   └── .env                         # DB + JWT + Google config
+│   └── .env                         # DB + JWT + Google config (local only)
+│
+├── database/
+│   └── schema.sql                    # MySQL table creation
 │
 └── README.md
 ```
@@ -67,7 +68,7 @@ SajiloHub/
 
 ```bash
 # Log into MySQL and run the schema script
-mysql -u root -p < server/db/schema.sql
+mysql -u root -p < database/schema.sql
 ```
 
 This creates the `sajilohub` database and `users` table.
@@ -75,7 +76,7 @@ This creates the `sajilohub` database and `users` table.
 ### 2. Backend Setup
 
 ```bash
-cd server
+cd backend
 npm install
 
 # Edit .env with your MySQL credentials and a strong JWT secret
@@ -88,7 +89,7 @@ The backend runs on **http://localhost:5000**.
 ### 3. Frontend Setup
 
 ```bash
-cd client
+cd frontend
 npm install
 
 # Edit .env with your Google Client ID (optional)
@@ -104,8 +105,8 @@ The frontend runs on **http://localhost:5173** and proxies `/api` requests to th
 2. Create a new OAuth 2.0 Client ID (Web application)
 3. Add `http://localhost:5173` to **Authorized JavaScript origins**
 4. Copy the Client ID to:
-   - `client/.env` → `VITE_GOOGLE_CLIENT_ID`
-   - `server/.env` → `GOOGLE_CLIENT_ID`
+   - `frontend/.env` → `VITE_GOOGLE_CLIENT_ID`
+   - `backend/.env` → `GOOGLE_CLIENT_ID`
 
 ## API Endpoints
 
